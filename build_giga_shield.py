@@ -413,7 +413,7 @@ def build_pcb():
     # Extra power decoupling
     for i in range(9):
         cref = f'C{cap_num}'
-        cx = mm(10 + i * 15)
+        cx = mm(15 + i * 14)
         cy = mm(80)
         elements.append(smd_0603_element(cref, '0.1uF', cx, cy))
         add_net('+3V3' if i % 2 == 0 else '+5V', cref, 1)
@@ -429,8 +429,12 @@ def build_pcb():
         add_net(n, 'J11', i+1)
 
     # DIR pull-down resistors (default A→B)
-    # R3 gets custom offset to avoid overlapping J4
-    resistor_offsets = {3: (mm(5), mm(-5))}  # R3: below U3 instead of above
+    # Custom offsets to avoid overlapping nearby headers and caps
+    resistor_offsets = {
+        3: (mm(8), mm(-5)),   # R3: further right to clear C5
+        6: (mm(5), mm(-10)),  # R6: well above U6 to clear body and U8's C15
+        8: (mm(8), mm(5)),    # R8: further right to clear U9's C17
+    }
     for i in range(9):
         rref = f'R{i+1}'
         uref = f'U{i+1}'
