@@ -1,0 +1,9 @@
+﻿Reference,Qty,Value,Footprint,Mfr. PART #,SUPPLIER
+"C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C23,C24,C25,C26,C27",27,0.1uF,Capacitor_SMD:C_0603_1608Metric,CC0603KRX7R9BB104,LCSC
+"J1,J3,J4,J6,J7",5,Conn_01x08,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,DNP,LCSC
+J2,1,Conn_01x10,Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical,DNP,LCSC
+"J5,J8",2,Conn_01x26,Connector_PinHeader_2.54mm:PinHeader_1x26_P2.54mm_Vertical,DNP,LCSC
+J9,1,JSIDE,Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical,DNP,LCSC
+J10,1,JSIDE_5V,Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical,DNP,LCSC
+"R1,R2,R3,R4,R5,R6,R7,R8,R9",9,10K,Resistor_SMD:R_0603_1608Metric,RC0603FR-0710KL,LCSC
+"U1,U2,U3,U4,U5,U6,U7,U8,U9",9,TXB0108PW,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,TXB0108PWR,LCSC

@@ -1,0 +1,4 @@
+Qty,Description,Value,Package,RefDes,Manufacturer Part Number,Notes
+9,8-Bit Dual-Supply Bus Transceiver with Direction Control,-,TSSOP-24,U1 U2 U3 U4 U5 U6 U7 U8 U9,SN74LVC8T245PW,Driven level shifter 3.3V<->5V
+27,Ceramic Capacitor,0.1uF,0603,C1-C27,,Decoupling capacitors
+9,Resistor,10K,0603,R1-R9,,DIR pin pull-down resistors (default A->B)

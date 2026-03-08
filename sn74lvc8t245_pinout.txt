@@ -1,0 +1,55 @@
+SN74LVC8T245PW (TSSOP-24) Pinout:
+Pin 1:  1DIR    (Direction control: LOW=A→B, HIGH=B→A)
+Pin 2:  A1
+Pin 3:  A2
+Pin 4:  A3
+Pin 5:  A4
+Pin 6:  GND
+Pin 7:  A5
+Pin 8:  A6
+Pin 9:  A7
+Pin 10: A8
+Pin 11: 1OE#    (Output Enable, active LOW)
+Pin 12: GND
+Pin 13: B8
+Pin 14: B7
+Pin 15: B6
+Pin 16: B5
+Pin 17: VCCB    (5V side power)
+Pin 18: B4
+Pin 19: B3
+Pin 20: B2
+Pin 21: B1
+Pin 22: VCCA    (3.3V side power)
+Pin 23: VCCA
+Pin 24: VCCB
+
+TXB0108PW (TSSOP-20) Pinout (current):
+Pin 1:  VCCA    (3.3V side power)
+Pin 2:  A1
+Pin 3:  A2
+Pin 4:  A3
+Pin 5:  A4
+Pin 6:  A5
+Pin 7:  A6
+Pin 8:  A7
+Pin 9:  A8
+Pin 10: GND
+Pin 11: OE      (Output Enable, active HIGH)
+Pin 12: B8
+Pin 13: B7
+Pin 14: B6
+Pin 15: B5
+Pin 16: B4
+Pin 17: B3
+Pin 18: B2
+Pin 19: B1
+Pin 20: VCCB    (5V side power)
+
+Key differences:
+- SN74LVC8T245 has 24 pins (4 more: extra GND, extra VCC, DIR, split VCCA)
+- DIR pin added (pin 1) - this is the key feature
+- OE is active LOW on SN74LVC8T245 (vs active HIGH on TXB0108)
+- A5-A8 shifted by one position due to extra GND at pin 6
+- B-side pins similar but shifted
+- Dual VCCA pins (22,23) and dual VCCB pins (17,24)

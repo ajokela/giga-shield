@@ -1,0 +1,1378 @@
+(pcb GigaShield
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "pcb-rnd/io_dsn")
+    (host_version "3.1.4")
+  )
+  (resolution mm 1000000)
+  (unit mm)
+  (structure
+    (boundary (rect pcb 0.0 0.0 155.0 90.0))
+    (boundary (path signal 0 0.0 90.0 155.0 90.0 155.0 0.0 0.0 0.0
+      0.0 90.0))
+    (layer "3__top_copper" (type signal))
+    (layer "6__bottom_copper" (type signal))
+  )
+  (library
+    (padstack pstk_2
+      (hole (circle signal 0.889 0 0))
+      (hole (circle power 0.889 0 0))
+      (plating plated)
+      (shape (circle 3__top_copper 1.524 0.0 0.0))
+      (shape (circle 6__bottom_copper 1.524 0.0 0.0))
+      (attach off)
+    )
+    (padstack pstk_1
+      (hole (circle signal 0.508 0 0))
+      (hole (circle power 0.508 0 0))
+      (plating plated)
+      (shape (circle 3__top_copper 0.9144 0.0 0.0))
+      (shape (circle 6__bottom_copper 0.9144 0.0 0.0))
+      (attach off)
+    )
+    (padstack pstk_7
+      (shape (poly 3__top_copper 0 -0.8 0.2 -0.8 -0.2 0.8 -0.2 0.8
+         0.2))
+      (attach off)
+    )
+    (padstack pstk_6
+      (hole (circle signal 1.0 0 0))
+      (hole (circle power 1.0 0 0))
+      (plating plated)
+      (shape (circle 3__top_copper 1.7 0.0 0.0))
+      (shape (circle 6__bottom_copper 1.7 0.0 0.0))
+      (attach off)
+    )
+    (padstack pstk_8
+      (shape (path 3__top_copper 0.4 -0.6 0.0 0.6 0.0))
+      (attach off)
+    )
+    (padstack pstk_9
+      (shape (poly 3__top_copper 0 -0.45 -0.45 0.45 -0.45 0.45 0.45
+         -0.45 0.45))
+      (attach off)
+    )
+    (padstack pstk_3
+      (hole (circle signal 0.299974 0 0))
+      (hole (circle power 0.299974 0 0))
+      (plating plated)
+      (shape (circle 3__top_copper 0.610108 0.0 0.0))
+      (shape (circle 6__bottom_copper 0.610108 0.0 0.0))
+      (attach off)
+    )
+    (padstack pstk_4
+      (hole (circle signal 3.2 0 0))
+      (hole (circle power 3.2 0 0))
+      (plating plated)
+      (shape (circle 3__top_copper 5.0 0.0 0.0))
+      (shape (circle 6__bottom_copper 5.0 0.0 0.0))
+      (attach off)
+    )
+    (padstack pstk_5
+      (hole (circle signal 1.0 0 0))
+      (hole (circle power 1.0 0 0))
+      (plating plated)
+      (shape (poly 3__top_copper 0 -0.85 0.85 0.85 0.85 0.85 -0.85
+         -0.85 -0.85))
+      (shape (poly 6__bottom_copper 0 -0.85 0.85 0.85 0.85 0.85 -0.85
+         -0.85 -0.85))
+      (attach off)
+    )
+    (image subc_3518
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2628
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2942
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2725
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_1794
+      (pin pstk_4 1 0.0 0.0)
+    )
+    (image subc_1826
+      (pin pstk_4 1 0.0 0.0)
+    )
+    (image subc_3182
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2457
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2531
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2651
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2037
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+    )
+    (image subc_3136
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3228
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3449
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_1842
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+    )
+    (image subc_2919
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_1877
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+      (pin pstk_6 9 0.0 20.32 (rotate 90))
+      (pin pstk_6 10 0.0 22.86 (rotate 90))
+    )
+    (image subc_3426
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2072
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+    )
+    (image subc_3366
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+      (pin pstk_6 9 0.0 20.32 (rotate 90))
+      (pin pstk_6 10 0.0 22.86 (rotate 90))
+    )
+    (image subc_2554
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2107
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+      (pin pstk_6 9 0.0 20.32 (rotate 90))
+      (pin pstk_6 10 0.0 22.86 (rotate 90))
+      (pin pstk_6 11 0.0 25.4 (rotate 90))
+      (pin pstk_6 12 0.0 27.94 (rotate 90))
+      (pin pstk_6 13 0.0 30.48 (rotate 90))
+      (pin pstk_6 14 0.0 33.02 (rotate 90))
+      (pin pstk_6 15 0.0 35.56 (rotate 90))
+      (pin pstk_6 16 0.0 38.1 (rotate 90))
+      (pin pstk_6 17 0.0 40.64 (rotate 90))
+      (pin pstk_6 18 0.0 43.18 (rotate 90))
+      (pin pstk_6 19 0.0 45.72 (rotate 90))
+      (pin pstk_6 20 0.0 48.26 (rotate 90))
+      (pin pstk_6 21 0.0 50.8 (rotate 90))
+      (pin pstk_6 22 0.0 53.34 (rotate 90))
+      (pin pstk_6 23 0.0 55.88 (rotate 90))
+      (pin pstk_6 24 0.0 58.42 (rotate 90))
+      (pin pstk_6 25 0.0 60.96 (rotate 90))
+      (pin pstk_6 26 0.0 63.5 (rotate 90))
+    )
+    (image subc_3495
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2160
+      (pin pstk_5 1 0.0 0.0)
+      (pin pstk_6 2 0.0 -2.54)
+      (pin pstk_6 3 0.0 -5.08)
+      (pin pstk_6 4 0.0 -7.62)
+      (pin pstk_6 5 0.0 -10.16)
+      (pin pstk_6 6 0.0 -12.7)
+      (pin pstk_6 7 0.0 -15.24)
+      (pin pstk_6 8 0.0 -17.78)
+      (pin pstk_6 9 0.0 -20.32)
+      (pin pstk_6 10 0.0 -22.86)
+      (pin pstk_6 11 0.0 -25.4)
+      (pin pstk_6 12 0.0 -27.94)
+      (pin pstk_6 13 0.0 -30.48)
+      (pin pstk_6 14 0.0 -33.02)
+      (pin pstk_6 15 0.0 -35.56)
+      (pin pstk_6 16 0.0 -38.1)
+      (pin pstk_6 17 0.0 -40.64)
+      (pin pstk_6 18 0.0 -43.18)
+      (pin pstk_6 19 2.54 0.0)
+      (pin pstk_6 20 2.54 -2.54)
+      (pin pstk_6 21 2.54 -5.08)
+      (pin pstk_6 22 2.54 -7.62)
+      (pin pstk_6 23 2.54 -10.16)
+      (pin pstk_6 24 2.54 -12.7)
+      (pin pstk_6 25 2.54 -15.24)
+      (pin pstk_6 26 2.54 -17.78)
+      (pin pstk_6 27 2.54 -20.32)
+      (pin pstk_6 28 2.54 -22.86)
+      (pin pstk_6 29 2.54 -25.4)
+      (pin pstk_6 30 2.54 -27.94)
+      (pin pstk_6 31 2.54 -30.48)
+      (pin pstk_6 32 2.54 -33.02)
+      (pin pstk_6 33 2.54 -35.56)
+      (pin pstk_6 34 2.54 -38.1)
+      (pin pstk_6 35 2.54 -40.64)
+      (pin pstk_6 36 2.54 -43.18)
+    )
+    (image subc_2434
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2337
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3039
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3062
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_2360
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_1778
+      (pin pstk_4 1 0.0 0.0)
+    )
+    (image subc_1810
+      (pin pstk_4 1 0.0 0.0)
+    )
+    (image subc_2845
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_1914
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+    )
+    (image subc_3113
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2868
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_3274
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3587
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3320
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3403
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3297
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3564
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_1949
+      (pin pstk_5 1 0.0 0.0 (rotate -90))
+      (pin pstk_6 2 0.0 2.54 (rotate -90))
+      (pin pstk_6 3 0.0 5.08 (rotate -90))
+      (pin pstk_6 4 0.0 7.62 (rotate -90))
+      (pin pstk_6 5 0.0 10.16 (rotate -90))
+      (pin pstk_6 6 0.0 12.7 (rotate -90))
+      (pin pstk_6 7 0.0 15.24 (rotate -90))
+      (pin pstk_6 8 0.0 17.78 (rotate -90))
+    )
+    (image subc_2480
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_2383
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_3472
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2771
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_2577
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_1984
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+      (pin pstk_6 9 0.0 20.32 (rotate 90))
+      (pin pstk_6 10 0.0 22.86 (rotate 90))
+      (pin pstk_6 11 0.0 25.4 (rotate 90))
+      (pin pstk_6 12 0.0 27.94 (rotate 90))
+      (pin pstk_6 13 0.0 30.48 (rotate 90))
+      (pin pstk_6 14 0.0 33.02 (rotate 90))
+      (pin pstk_6 15 0.0 35.56 (rotate 90))
+      (pin pstk_6 16 0.0 38.1 (rotate 90))
+      (pin pstk_6 17 0.0 40.64 (rotate 90))
+      (pin pstk_6 18 0.0 43.18 (rotate 90))
+      (pin pstk_6 19 0.0 45.72 (rotate 90))
+      (pin pstk_6 20 0.0 48.26 (rotate 90))
+      (pin pstk_6 21 0.0 50.8 (rotate 90))
+      (pin pstk_6 22 0.0 53.34 (rotate 90))
+      (pin pstk_6 23 0.0 55.88 (rotate 90))
+      (pin pstk_6 24 0.0 58.42 (rotate 90))
+      (pin pstk_6 25 0.0 60.96 (rotate 90))
+      (pin pstk_6 26 0.0 63.5 (rotate 90))
+    )
+    (image subc_3159
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3205
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3541
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2748
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2965
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_3251
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2223
+      (pin pstk_5 1 0.0 0.0)
+      (pin pstk_6 2 0.0 -2.54)
+      (pin pstk_6 3 0.0 -5.08)
+      (pin pstk_6 4 0.0 -7.62)
+      (pin pstk_6 5 0.0 -10.16)
+      (pin pstk_6 6 0.0 -12.7)
+      (pin pstk_6 7 0.0 -15.24)
+      (pin pstk_6 8 0.0 -17.78)
+      (pin pstk_6 9 0.0 -20.32)
+      (pin pstk_6 10 0.0 -22.86)
+      (pin pstk_6 11 0.0 -25.4)
+      (pin pstk_6 12 0.0 -27.94)
+      (pin pstk_6 13 0.0 -30.48)
+      (pin pstk_6 14 0.0 -33.02)
+      (pin pstk_6 15 0.0 -35.56)
+      (pin pstk_6 16 0.0 -38.1)
+      (pin pstk_6 17 0.0 -40.64)
+      (pin pstk_6 18 0.0 -43.18)
+      (pin pstk_6 19 2.54 0.0)
+      (pin pstk_6 20 2.54 -2.54)
+      (pin pstk_6 21 2.54 -5.08)
+      (pin pstk_6 22 2.54 -7.62)
+      (pin pstk_6 23 2.54 -10.16)
+      (pin pstk_6 24 2.54 -12.7)
+      (pin pstk_6 25 2.54 -15.24)
+      (pin pstk_6 26 2.54 -17.78)
+      (pin pstk_6 27 2.54 -20.32)
+      (pin pstk_6 28 2.54 -22.86)
+      (pin pstk_6 29 2.54 -25.4)
+      (pin pstk_6 30 2.54 -27.94)
+      (pin pstk_6 31 2.54 -30.48)
+      (pin pstk_6 32 2.54 -33.02)
+      (pin pstk_6 33 2.54 -35.56)
+      (pin pstk_6 34 2.54 -38.1)
+      (pin pstk_6 35 2.54 -40.64)
+      (pin pstk_6 36 2.54 -43.18)
+    )
+    (image subc_2286
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_3343
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2674
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_3016
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2822
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+  )
+  (wiring
+  )
+  (placement
+    (place_control (flip_style rotate_first))
+    (component subc_1778
+      (place H1 7.0 83.0 front 0)
+    )
+    (component subc_1794
+      (place H2 7.0 7.0 front 0)
+    )
+    (component subc_1810
+      (place H3 148.0 7.0 front 0)
+    )
+    (component subc_1826
+      (place H4 148.0 83.0 front 0)
+    )
+    (component subc_1842
+      (place J1 43.11 18.99 front -90 (property (value 'Conn_01x08')))
+    )
+    (component subc_1877
+      (place J2 33.645 67.16 front -90 (property (value 'Conn_01x10')))
+    )
+    (component subc_1914
+      (place J3 65.849999 18.99 front -90 (property (value 'Conn_01x08')))
+    )
+    (component subc_1949
+      (place J4 78.655 67.130001 front 90 (property (value 'Conn_01x08')))
+    )
+    (component subc_1984
+      (place J5 40.639999 5.83 front -90 (property (value 'J_ANALOG')))
+    )
+    (component subc_2037
+      (place J6 88.63 18.99 front -90 (property (value 'Conn_01x08')))
+    )
+    (component subc_2072
+      (place J7 83.13 67.08 front -90 (property (value 'Conn_01x08')))
+    )
+    (component subc_2107
+      (place J8 39.02 83.170001 front -90 (property (value 'J_DIGITAL')))
+    )
+    (component subc_2160
+      (place J9 108.889999 67.32 front 0 (property (value 'JSIDE')))
+    )
+    (component subc_2223
+      (place J10 144.73 64.5 front 0 (property (value 'JSIDE_5V')))
+    )
+    (component subc_2286
+      (place U1 46.3 74.700001 front 0 (property (value 'SN74LVC8T245PW')))
+    )
+    (component subc_2337
+      (place C1 49.3 80.700001 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2360
+      (place C2 43.3 80.700001 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2383
+      (place U2 78.8 31.5 front 0 (property (value 'SN74LVC8T245PW')))
+    )
+    (component subc_2434
+      (place C3 81.8 37.5 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2457
+      (place C4 75.8 37.5 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2480
+      (place U3 68.6 73.8 front 0 (property (value 'SN74LVC8T245PW')))
+    )
+    (component subc_2531
+      (place C5 71.6 79.8 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2554
+      (place C6 65.6 79.8 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2577
+      (place U4 94.4 31.400001 front 0 (property (value 'SN74LVC8T245PW')))
+    )
+    (component subc_2628
+      (place C7 97.4 37.400001 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2651
+      (place C8 91.4 37.400001 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2674
+      (place U5 89.8 74.8 front 0 (property (value 'SN74LVC8T245PW')))
+    )
+    (component subc_2725
+      (place C9 92.8 80.8 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2748
+      (place C10 86.8 80.8 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2771
+      (place U6 126.6 58.3 front 0 (property (value 'SN74LVC8T245PW')))
+    )
+    (component subc_2822
+      (place C11 129.6 64.3 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2845
+      (place C12 123.6 64.3 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2868
+      (place U7 127.199999 21.4 front 0 (property (value 'SN74LVC8T245PW')))
+    )
+    (component subc_2919
+      (place C13 130.199999 27.4 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2942
+      (place C14 124.199999 27.4 front 0 (property (value '0.1uF')))
+    )
+    (component subc_2965
+      (place U8 126.5 46.5 front 0 (property (value 'SN74LVC8T245PW')))
+    )
+    (component subc_3016
+      (place C15 129.5 52.5 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3039
+      (place C16 123.5 52.5 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3062
+      (place U9 126.699999 34.8 front 0 (property (value 'SN74LVC8T245PW')))
+    )
+    (component subc_3113
+      (place C17 129.699999 40.8 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3136
+      (place C18 123.699999 40.8 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3159
+      (place C19 10.0 5.0 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3182
+      (place C20 25.0 5.0 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3205
+      (place C21 40.0 5.0 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3228
+      (place C22 55.0 5.0 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3251
+      (place C23 70.0 5.0 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3274
+      (place C24 85.0 5.0 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3297
+      (place C25 100.0 5.0 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3320
+      (place C26 115.0 5.0 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3343
+      (place C27 130.0 5.0 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3366
+      (place J11 40.0 15.0 front -90 (property (value 'DIR_CTRL')))
+    )
+    (component subc_3403
+      (place R1 51.3 69.700001 front 0 (property (value '10K')))
+    )
+    (component subc_3426
+      (place R2 83.8 26.5 front 0 (property (value '10K')))
+    )
+    (component subc_3449
+      (place R3 73.6 68.8 front 0 (property (value '10K')))
+    )
+    (component subc_3472
+      (place R4 99.4 26.400001 front 0 (property (value '10K')))
+    )
+    (component subc_3495
+      (place R5 94.8 69.8 front 0 (property (value '10K')))
+    )
+    (component subc_3518
+      (place R6 131.6 53.3 front 0 (property (value '10K')))
+    )
+    (component subc_3541
+      (place R7 132.199999 16.4 front 0 (property (value '10K')))
+    )
+    (component subc_3564
+      (place R8 131.5 41.5 front 0 (property (value '10K')))
+    )
+    (component subc_3587
+      (place R9 131.699999 29.8 front 0 (property (value '10K')))
+    )
+  )
+  (network
+    (net DIR_U8
+      (pins  U8-1  J11-8  R8-1)
+    )
+    (net DIR_U9
+      (pins  U9-1  J11-9  R9-1)
+    )
+    (net PI13
+      (pins  J10-26  U7-16)
+    )
+    (net PI11
+      (pins  J10-31  U9-14)
+    )
+    (net PI14
+      (pins  J10-20  U7-20)
+    )
+    (net PI15
+      (pins  J10-23  U9-19)
+    )
+    (net AREF
+      (pins  J8-3  U1-19)
+    )
+    (net DIR_U7
+      (pins  U7-1  J11-7  R7-1)
+    )
+    (net GND
+      (pins  J5-6  J5-7  J8-4  J7-6  J7-8  J9-35  J9-36  J10-35  J10-36
+       U1-6  U1-11  U1-12  C1-2  C2-2  U2-6  U2-11  U2-12  C3-2  C4-2
+       U3-6  U3-11  U3-12  C5-2  C6-2  U4-6  U4-11  U4-12  C7-2  C8-2
+       U5-6  U5-11  U5-12  C9-2  C10-2  U6-6  U6-11  U6-12  C11-2
+       C12-2  U7-6  U7-11  U7-12  C13-2  C14-2  U8-6  U8-11  U8-12
+       C15-2  C16-2  U9-6  U9-11  U9-12  C17-2  C18-2  C19-2  C20-2
+       C21-2  C22-2  C23-2  C24-2  C25-2  C26-2  C27-2  J11-10  R1-2
+       R2-2  R3-2  R4-2  R5-2  R6-2  R7-2  R8-2  R9-2)
+    )
+    (net PJ10
+      (pins  J8-7  U1-15)
+    )
+    (net PJ11
+      (pins  J8-6  U1-16)
+    )
+    (net PJ12
+      (pins  J10-3  U6-21)
+    )
+    (net PJ14
+      (pins  J10-7  U6-19)
+    )
+    (net PJ15
+      (pins  J10-9  U6-18)
+    )
+    (net PC2_C
+      (pins  J2-6  U4-2)
+    )
+    (net AREF_3V3
+      (pins  J4-3  U1-4)
+    )
+    (net IOREF_3V3
+      (pins  J5-2  J2-4)
+    )
+    (net CAN_RX
+      (pins  J5-23  U4-14)
+    )
+    (net CAN_TX
+      (pins  J5-24  U4-13)
+    )
+    (net PC3_C
+      (pins  J2-7  U4-3)
+    )
+    (net +3V3
+      (pins  J5-4  J2-2  J2-3  J7-5  U1-22  U1-23  C1-1  U2-22  U2-23
+       C3-1  U3-22  U3-23  C5-1  U4-22  U4-23  C7-1  U5-22  U5-23
+       C9-1  U6-22  U6-23  C11-1  U7-22  U7-23  C13-1  U8-22  U8-23
+       C15-1  U9-22  U9-23  C17-1  C19-1  C21-1  C23-1  C25-1  C27-1
+      )
+    )
+    (net A0
+      (pins  J5-9  U2-21)
+    )
+    (net A1
+      (pins  J5-10  U2-20)
+    )
+    (net A2
+      (pins  J5-11  U2-19)
+    )
+    (net A3
+      (pins  J5-12  U2-18)
+    )
+    (net A4
+      (pins  J5-13  U2-16)
+    )
+    (net A5
+      (pins  J5-14  U2-15)
+    )
+    (net A6
+      (pins  J5-15  U2-14)
+    )
+    (net A7
+      (pins  J5-16  U2-13)
+    )
+    (net A8
+      (pins  J5-17  U4-21)
+    )
+    (net A9
+      (pins  J5-18  U4-20)
+    )
+    (net D0
+      (pins  J6-1  U5-2)
+    )
+    (net D1
+      (pins  J3-8  U3-10)
+    )
+    (net D2
+      (pins  J3-7  U3-9)
+    )
+    (net D3
+      (pins  J3-6  U3-8)
+    )
+    (net D4
+      (pins  J3-5  U3-7)
+    )
+    (net D5
+      (pins  J3-4  U3-5)
+    )
+    (net D6
+      (pins  J3-3  U3-4)
+    )
+    (net D7
+      (pins  J3-2  U3-3)
+    )
+    (net D8
+      (pins  J3-1  U3-2)
+    )
+    (net D9
+      (pins  J4-8  U1-10)
+    )
+    (net PA4
+      (pins  J7-2  U4-7)
+    )
+    (net PA5
+      (pins  J7-3  U4-8)
+    )
+    (net PB1
+      (pins  J1-4  U2-5)
+    )
+    (net PA7
+      (pins  J8-13  U3-18)
+    )
+    (net PA9
+      (pins  J8-17  U3-13)
+    )
+    (net PB5
+      (pins  J7-4  U4-9)
+    )
+    (net PB6
+      (pins  J8-1  U1-21)
+    )
+    (net PA2
+      (pins  J8-15  U3-15)
+    )
+    (net PA3
+      (pins  J8-16  U3-14)
+    )
+    (net PB8
+      (pins  J8-10  U3-21)
+    )
+    (net PB4
+      (pins  J8-11  U3-20)
+    )
+    (net PC5
+      (pins  J1-2  U2-3)
+    )
+    (net PB2
+      (pins  J10-28  U7-15)
+    )
+    (net PB7
+      (pins  J8-18  U5-21)
+    )
+    (net PC3
+      (pins  J1-5  U2-7)
+    )
+    (net PB0
+      (pins  J1-3  U2-4)
+    )
+    (net PA0
+      (pins  J1-8  U2-10)
+    )
+    (net PC2
+      (pins  J1-6  U2-8)
+    )
+    (net PD5
+      (pins  J8-23  U5-15)
+    )
+    (net PB9
+      (pins  J8-9  U1-13)
+    )
+    (net PC0
+      (pins  J1-7  U2-9)
+    )
+    (net NRST
+      (pins  J5-3  J2-5)
+    )
+    (net PC7
+      (pins  J8-20  U5-19)
+    )
+    (net PE5
+      (pins  J10-32  U7-13)
+    )
+    (net PC4
+      (pins  J1-1  U2-2)
+    )
+    (net PE4
+      (pins  J10-30  U7-14)
+    )
+    (net PD6
+      (pins  J8-24  U5-14)
+    )
+    (net PE6
+      (pins  J10-21  U9-20)
+    )
+    (net PD13_5V
+      (pins  J8-12  U3-19)
+    )
+    (net PH4
+      (pins  J8-26  U8-21)
+    )
+    (net PH6
+      (pins  J8-5  U1-18)
+    )
+    (net PJ0
+      (pins  J10-6  U8-19)
+    )
+    (net PJ1
+      (pins  J10-8  U8-18)
+    )
+    (net PJ2
+      (pins  J10-10  U8-16)
+    )
+    (net PJ3
+      (pins  J10-12  U8-15)
+    )
+    (net PI9
+      (pins  J8-22  U5-16)
+    )
+    (net PJ4
+      (pins  J10-14  U8-14)
+    )
+    (net PJ5
+      (pins  J10-16  U8-13)
+    )
+    (net PJ7
+      (pins  J10-19  U9-21)
+    )
+    (net PK2
+      (pins  J10-33  U9-13)
+    )
+    (net PJ6
+      (pins  J10-18  U7-21)
+    )
+    (net PK4
+      (pins  J10-13  U6-15)
+    )
+    (net PJ8
+      (pins  J8-14  U3-16)
+    )
+    (net A10
+      (pins  J5-19  U4-19)
+    )
+    (net A11
+      (pins  J5-20  U4-18)
+    )
+    (net PK6
+      (pins  J10-17  U6-13)
+    )
+    (net PK0
+      (pins  J10-29  U9-15)
+    )
+    (net PK1
+      (pins  J8-8  U1-14)
+    )
+    (net PK7
+      (pins  J10-22  U7-19)
+    )
+    (net PK5
+      (pins  J10-15  U6-14)
+    )
+    (net PK3
+      (pins  J10-11  U6-16)
+    )
+    (net +5V
+      (pins  J5-5  J7-7  J9-1  J9-2  J10-1  J10-2  U1-17  U1-24  C2-1
+       U2-17  U2-24  C4-1  U3-17  U3-24  C6-1  U4-17  U4-24  C8-1
+       U5-17  U5-24  C10-1  U6-17  U6-24  C12-1  U7-17  U7-24  C14-1
+       U8-17  U8-24  C16-1  U9-17  U9-24  C18-1  C20-1  C22-1  C24-1
+       C26-1)
+    )
+    (net D10
+      (pins  J4-7  U1-9)
+    )
+    (net D11
+      (pins  J4-6  U1-8)
+    )
+    (net D12
+      (pins  J4-5  U1-7)
+    )
+    (net D13
+      (pins  J4-4  U1-5)
+    )
+    (net D14
+      (pins  J6-2  U5-3)
+    )
+    (net D15
+      (pins  J6-3  U5-4)
+    )
+    (net D16
+      (pins  J6-4  U5-5)
+    )
+    (net D17
+      (pins  J6-5  U5-7)
+    )
+    (net D18
+      (pins  J6-6  U5-8)
+    )
+    (net D19
+      (pins  J6-7  U5-9)
+    )
+    (net D22
+      (pins  J9-3  U6-2)
+    )
+    (net D20
+      (pins  J6-8  U5-10)
+    )
+    (net D21
+      (pins  J7-1  U8-2)
+    )
+    (net D25
+      (pins  J9-6  U8-4)
+    )
+    (net D23
+      (pins  J9-4  U8-3)
+    )
+    (net D24
+      (pins  J9-5  U6-3)
+    )
+    (net D28
+      (pins  J9-9  U6-5)
+    )
+    (net D26
+      (pins  J9-7  U6-4)
+    )
+    (net D27
+      (pins  J9-8  U8-5)
+    )
+    (net D33
+      (pins  J9-14  U8-9)
+    )
+    (net D29
+      (pins  J9-10  U8-7)
+    )
+    (net D31
+      (pins  J9-12  U8-8)
+    )
+    (net D32
+      (pins  J9-13  U6-8)
+    )
+    (net D37
+      (pins  J9-18  U7-2)
+    )
+    (net D34
+      (pins  J9-15  U6-9)
+    )
+    (net D30
+      (pins  J9-11  U6-7)
+    )
+    (net D36
+      (pins  J9-17  U6-10)
+    )
+    (net D42
+      (pins  J9-23  U9-4)
+    )
+    (net D38
+      (pins  J9-19  U9-2)
+    )
+    (net D39
+      (pins  J9-20  U7-3)
+    )
+    (net D35
+      (pins  J9-16  U8-10)
+    )
+    (net D41
+      (pins  J9-22  U7-4)
+    )
+    (net D47
+      (pins  J9-28  U7-8)
+    )
+    (net D43
+      (pins  J9-24  U7-5)
+    )
+    (net D44
+      (pins  J9-25  U9-5)
+    )
+    (net D45
+      (pins  J9-26  U7-7)
+    )
+    (net D40
+      (pins  J9-21  U9-3)
+    )
+    (net D52
+      (pins  J9-33  U9-10)
+    )
+    (net D48
+      (pins  J9-29  U9-8)
+    )
+    (net D49
+      (pins  J9-30  U7-9)
+    )
+    (net D50
+      (pins  J9-31  U9-9)
+    )
+    (net D46
+      (pins  J9-27  U9-7)
+    )
+    (net SDA1
+      (pins  J4-2  U1-3)
+    )
+    (net PA1_C
+      (pins  J2-8  U4-4)
+    )
+    (net PA0_C
+      (pins  J2-9  U4-5)
+    )
+    (net D51
+      (pins  J9-32  U7-10)
+    )
+    (net PB11
+      (pins  J8-25  U5-13)
+    )
+    (net PB13
+      (pins  J2-10  U4-10)
+    )
+    (net SCL1
+      (pins  J4-1  U1-2)
+    )
+    (net VIN
+      (pins  J5-8  J2-1)
+    )
+    (net DAC0
+      (pins  J5-21  U4-16)
+    )
+    (net DAC1
+      (pins  J5-22  U4-15)
+    )
+    (net PG10
+      (pins  J10-25  U9-18)
+    )
+    (net PG12
+      (pins  J10-5  U6-20)
+    )
+    (net PG13
+      (pins  J10-4  U8-20)
+    )
+    (net PG14
+      (pins  J8-19  U5-20)
+    )
+    (net PH12
+      (pins  J8-2  U1-20)
+    )
+    (net PH13
+      (pins  J8-21  U5-18)
+    )
+    (net PH15
+      (pins  J10-27  U9-16)
+    )
+    (net DIR_U1
+      (pins  U1-1  J11-1  R1-1)
+    )
+    (net DIR_U2
+      (pins  U2-1  J11-2  R2-1)
+    )
+    (net DIR_U3
+      (pins  U3-1  J11-3  R3-1)
+    )
+    (net DIR_U4
+      (pins  U4-1  J11-4  R4-1)
+    )
+    (net DIR_U5
+      (pins  U5-1  J11-5  R5-1)
+    )
+    (net DIR_U6
+      (pins  U6-1  J11-6  R6-1)
+    )
+    (net PI10
+      (pins  J10-24  U7-18)
+    )
+    (class pcb_rnd_default  DIR_U8 DIR_U9 PI13 PI11 PI14 PI15 AREF
+      DIR_U7 GND PJ10 PJ11 PJ12 PJ14 PJ15 PC2_C AREF_3V3 IOREF_3V3
+      CAN_RX CAN_TX PC3_C +3V3 A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 D0 D1
+      D2 D3 D4 D5 D6 D7 D8 D9 PA4 PA5 PB1 PA7 PA9 PB5 PB6 PA2 PA3
+      PB8 PB4 PC5 PB2 PB7 PC3 PB0 PA0 PC2 PD5 PB9 PC0 NRST PC7 PE5
+      PC4 PE4 PD6 PE6 PD13_5V PH4 PH6 PJ0 PJ1 PJ2 PJ3 PI9 PJ4 PJ5
+      PJ7 PK2 PJ6 PK4 PJ8 A10 A11 PK6 PK0 PK1 PK7 PK5 PK3 +5V D10
+      D11 D12 D13 D14 D15 D16 D17 D18 D19 D22 D20 D21 D25 D23 D24
+      D28 D26 D27 D33 D29 D31 D32 D37 D34 D30 D36 D42 D38 D39 D35
+      D41 D47 D43 D44 D45 D40 D52 D48 D49 D50 D46 SDA1 PA1_C PA0_C
+      D51 PB11 PB13 SCL1 VIN DAC0 DAC1 PG10 PG12 PG13 PG14 PH12 PH13
+      PH15 DIR_U1 DIR_U2 DIR_U3 DIR_U4 DIR_U5 DIR_U6 PI10
+      (circuit
+        (use_via pstk_1)
+      )
+      (rule
+        (width 0.254)
+        (clearance 0.254)
+      )
+    )
+  )
+)
