@@ -236,8 +236,12 @@ The original board was designed in **KiCad 9.0** (file version 20241229). Since 
 | `giga_shield_top.png` | Photo-realistic top view rendering |
 | `giga_shield_bottom.png` | Photo-realistic bottom view rendering |
 | `sn74lvc8t245_pinout.txt` | SN74LVC8T245 pinout reference |
-| `AlexJ_bz_ArduinoGigaShield.kicad_pcb` | Original KiCad PCB (reference) |
-| `AlexJ_bz_ArduinoGigaShield.kicad_sch` | Original KiCad schematic (reference) |
+| `kicad_source/` | Original KiCad 9.0 design files (reference) |
+| `kicad_source/AlexJ_bz_ArduinoGigaShield.kicad_pcb` | Original KiCad PCB |
+| `kicad_source/AlexJ_bz_ArduinoGigaShield.kicad_sch` | Original KiCad schematic |
+| `kicad_source/AlexJ_bz_ArduinoGigaShield.pdf` | Original schematic PDF |
+| `kicad_source/giga_pos.csv` | Component positions exported from KiCad |
+| `kicad_source/giga_netlist.d356` | IPC-D-356 netlist exported from KiCad |
 
 ## Board Renderings
 
