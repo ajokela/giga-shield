@@ -3893,7 +3893,7 @@ Layer(5 "silk")
 	Text[57780000nm 79000000nm 1 120 "U8" "clearline"]
 	Text[60320000nm 79000000nm 1 120 "U9" "clearline"]
 	Text[62860000nm 79000000nm 1 120 "GND" "clearline"]
-	Text[40000000nm 71000000nm 0 150 "J11 DIR" "clearline"]
+	Text[22000000nm 74000000nm 0 150 "J11 DIR" "clearline"]
 )
 
 NetList()

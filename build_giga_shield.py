@@ -515,8 +515,8 @@ def build_pcb():
         ly = j11_base_y + label_offset_y
         # direction 1 = 90° CCW rotation (text reads bottom-to-top)
         out.append(f'\tText[{lx}nm {ly}nm 1 120 "{label}" "clearline"]')
-    # Header title above J11
-    out.append(f'\tText[{j11_base_x}nm {j11_base_y - mm(4)}nm 0 150 "J11 DIR" "clearline"]')
+    # Header title to the left of J11
+    out.append(f'\tText[{j11_base_x - mm(18)}nm {j11_base_y - mm(1)}nm 0 150 "J11 DIR" "clearline"]')
     out.append(')')
     out.append('')
 
