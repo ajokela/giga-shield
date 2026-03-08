@@ -429,11 +429,14 @@ def build_pcb():
         add_net(n, 'J11', i+1)
 
     # DIR pull-down resistors (default A→B)
+    # R3 gets custom offset to avoid overlapping J4
+    resistor_offsets = {3: (mm(5), mm(-5))}  # R3: below U3 instead of above
     for i in range(9):
         rref = f'R{i+1}'
         uref = f'U{i+1}'
         sx, sy = SHIFTERS[uref]
-        elements.append(smd_0603_element(rref, '10K', sx + mm(5), sy + mm(5)))
+        dx, dy = resistor_offsets.get(i+1, (mm(5), mm(5)))
+        elements.append(smd_0603_element(rref, '10K', sx + dx, sy + dy))
         add_net(SHIFTER_NETS[uref]['dir_net'], rref, 1)
         add_net('GND', rref, 2)
 
@@ -493,23 +496,23 @@ def build_pcb():
     out.append('')
     out.append('Layer(4 "silk")')
     out.append('(')
-    # J11 DIR control header pin labels
-    j11_labels = ['U1', 'U2', 'U3', 'U4', 'U5', 'U6', 'U7', 'U8', 'U9', 'GND']
-    j11_base_x = mm(40)
-    j11_base_y = mm(75)
-    pitch = mm(2.54)
-    label_offset_y = mm(3.0)  # below the header pins
-    for i, label in enumerate(j11_labels):
-        lx = j11_base_x + i * pitch
-        ly = j11_base_y + label_offset_y
-        # direction 1 = 90° CCW rotation (text reads bottom-to-top)
-        out.append(f'\tText[{lx}nm {ly}nm 1 60 "{label}" "clearline"]')
-    # Header title above J11
-    out.append(f'\tText[{j11_base_x}nm {j11_base_y - mm(3)}nm 0 80 "J11 DIR" "clearline"]')
     out.append(')')
     out.append('')
     out.append('Layer(5 "silk")')
     out.append('(')
+    # J11 DIR control header pin labels (top silk)
+    j11_labels = ['U1', 'U2', 'U3', 'U4', 'U5', 'U6', 'U7', 'U8', 'U9', 'GND']
+    j11_base_x = mm(40)
+    j11_base_y = mm(75)
+    pitch = mm(2.54)
+    label_offset_y = mm(4.0)  # below the header pins
+    for i, label in enumerate(j11_labels):
+        lx = j11_base_x + i * pitch
+        ly = j11_base_y + label_offset_y
+        # direction 1 = 90° CCW rotation (text reads bottom-to-top)
+        out.append(f'\tText[{lx}nm {ly}nm 1 120 "{label}" "clearline"]')
+    # Header title above J11
+    out.append(f'\tText[{j11_base_x}nm {j11_base_y - mm(4)}nm 0 150 "J11 DIR" "clearline"]')
     out.append(')')
     out.append('')
 
