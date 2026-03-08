@@ -414,7 +414,7 @@ def build_pcb():
     for i in range(9):
         cref = f'C{cap_num}'
         cx = mm(10 + i * 15)
-        cy = BOARD_H - mm(5)
+        cy = mm(80)
         elements.append(smd_0603_element(cref, '0.1uF', cx, cy))
         add_net('+3V3' if i % 2 == 0 else '+5V', cref, 1)
         add_net('GND', cref, 2)

@@ -9,8 +9,8 @@
   (unit mm)
   (structure
     (boundary (rect pcb 0.0 0.0 155.0 90.0))
-    (boundary (path signal 0 0.0 90.0 155.0 90.0 155.0 0.0 0.0 0.0
-      0.0 90.0))
+    (boundary (path signal 0 0.254 89.746 0.254 0.254 154.746 0.254
+      154.746 89.746 0.254 89.746))
     (layer "3__top_copper" (type signal))
     (layer "6__bottom_copper" (type signal))
   )
@@ -79,11 +79,77 @@
          -0.85 -0.85))
       (attach off)
     )
-    (image subc_3518
+    (image subc_3472
       (pin pstk_9 1 -0.75 0.0)
       (pin pstk_9 2 0.75 0.0)
     )
-    (image subc_2628
+    (image subc_2406
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_3587
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2600
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_1937
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+    )
+    (image subc_3426
       (pin pstk_9 1 -0.75 0.0)
       (pin pstk_9 2 0.75 0.0)
     )
@@ -91,297 +157,7 @@
       (pin pstk_9 1 -0.75 0.0)
       (pin pstk_9 2 0.75 0.0)
     )
-    (image subc_2725
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_1794
-      (pin pstk_4 1 0.0 0.0)
-    )
-    (image subc_1826
-      (pin pstk_4 1 0.0 0.0)
-    )
-    (image subc_3182
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2457
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2531
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2651
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2037
-      (pin pstk_5 1 0.0 0.0 (rotate 90))
-      (pin pstk_6 2 0.0 2.54 (rotate 90))
-      (pin pstk_6 3 0.0 5.08 (rotate 90))
-      (pin pstk_6 4 0.0 7.62 (rotate 90))
-      (pin pstk_6 5 0.0 10.16 (rotate 90))
-      (pin pstk_6 6 0.0 12.7 (rotate 90))
-      (pin pstk_6 7 0.0 15.24 (rotate 90))
-      (pin pstk_6 8 0.0 17.78 (rotate 90))
-    )
-    (image subc_3136
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3228
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3449
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_1842
-      (pin pstk_5 1 0.0 0.0 (rotate 90))
-      (pin pstk_6 2 0.0 2.54 (rotate 90))
-      (pin pstk_6 3 0.0 5.08 (rotate 90))
-      (pin pstk_6 4 0.0 7.62 (rotate 90))
-      (pin pstk_6 5 0.0 10.16 (rotate 90))
-      (pin pstk_6 6 0.0 12.7 (rotate 90))
-      (pin pstk_6 7 0.0 15.24 (rotate 90))
-      (pin pstk_6 8 0.0 17.78 (rotate 90))
-    )
-    (image subc_2919
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_1877
-      (pin pstk_5 1 0.0 0.0 (rotate 90))
-      (pin pstk_6 2 0.0 2.54 (rotate 90))
-      (pin pstk_6 3 0.0 5.08 (rotate 90))
-      (pin pstk_6 4 0.0 7.62 (rotate 90))
-      (pin pstk_6 5 0.0 10.16 (rotate 90))
-      (pin pstk_6 6 0.0 12.7 (rotate 90))
-      (pin pstk_6 7 0.0 15.24 (rotate 90))
-      (pin pstk_6 8 0.0 17.78 (rotate 90))
-      (pin pstk_6 9 0.0 20.32 (rotate 90))
-      (pin pstk_6 10 0.0 22.86 (rotate 90))
-    )
-    (image subc_3426
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2072
-      (pin pstk_5 1 0.0 0.0 (rotate 90))
-      (pin pstk_6 2 0.0 2.54 (rotate 90))
-      (pin pstk_6 3 0.0 5.08 (rotate 90))
-      (pin pstk_6 4 0.0 7.62 (rotate 90))
-      (pin pstk_6 5 0.0 10.16 (rotate 90))
-      (pin pstk_6 6 0.0 12.7 (rotate 90))
-      (pin pstk_6 7 0.0 15.24 (rotate 90))
-      (pin pstk_6 8 0.0 17.78 (rotate 90))
-    )
-    (image subc_3366
-      (pin pstk_5 1 0.0 0.0 (rotate 90))
-      (pin pstk_6 2 0.0 2.54 (rotate 90))
-      (pin pstk_6 3 0.0 5.08 (rotate 90))
-      (pin pstk_6 4 0.0 7.62 (rotate 90))
-      (pin pstk_6 5 0.0 10.16 (rotate 90))
-      (pin pstk_6 6 0.0 12.7 (rotate 90))
-      (pin pstk_6 7 0.0 15.24 (rotate 90))
-      (pin pstk_6 8 0.0 17.78 (rotate 90))
-      (pin pstk_6 9 0.0 20.32 (rotate 90))
-      (pin pstk_6 10 0.0 22.86 (rotate 90))
-    )
-    (image subc_2554
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2107
-      (pin pstk_5 1 0.0 0.0 (rotate 90))
-      (pin pstk_6 2 0.0 2.54 (rotate 90))
-      (pin pstk_6 3 0.0 5.08 (rotate 90))
-      (pin pstk_6 4 0.0 7.62 (rotate 90))
-      (pin pstk_6 5 0.0 10.16 (rotate 90))
-      (pin pstk_6 6 0.0 12.7 (rotate 90))
-      (pin pstk_6 7 0.0 15.24 (rotate 90))
-      (pin pstk_6 8 0.0 17.78 (rotate 90))
-      (pin pstk_6 9 0.0 20.32 (rotate 90))
-      (pin pstk_6 10 0.0 22.86 (rotate 90))
-      (pin pstk_6 11 0.0 25.4 (rotate 90))
-      (pin pstk_6 12 0.0 27.94 (rotate 90))
-      (pin pstk_6 13 0.0 30.48 (rotate 90))
-      (pin pstk_6 14 0.0 33.02 (rotate 90))
-      (pin pstk_6 15 0.0 35.56 (rotate 90))
-      (pin pstk_6 16 0.0 38.1 (rotate 90))
-      (pin pstk_6 17 0.0 40.64 (rotate 90))
-      (pin pstk_6 18 0.0 43.18 (rotate 90))
-      (pin pstk_6 19 0.0 45.72 (rotate 90))
-      (pin pstk_6 20 0.0 48.26 (rotate 90))
-      (pin pstk_6 21 0.0 50.8 (rotate 90))
-      (pin pstk_6 22 0.0 53.34 (rotate 90))
-      (pin pstk_6 23 0.0 55.88 (rotate 90))
-      (pin pstk_6 24 0.0 58.42 (rotate 90))
-      (pin pstk_6 25 0.0 60.96 (rotate 90))
-      (pin pstk_6 26 0.0 63.5 (rotate 90))
-    )
-    (image subc_3495
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2160
-      (pin pstk_5 1 0.0 0.0)
-      (pin pstk_6 2 0.0 -2.54)
-      (pin pstk_6 3 0.0 -5.08)
-      (pin pstk_6 4 0.0 -7.62)
-      (pin pstk_6 5 0.0 -10.16)
-      (pin pstk_6 6 0.0 -12.7)
-      (pin pstk_6 7 0.0 -15.24)
-      (pin pstk_6 8 0.0 -17.78)
-      (pin pstk_6 9 0.0 -20.32)
-      (pin pstk_6 10 0.0 -22.86)
-      (pin pstk_6 11 0.0 -25.4)
-      (pin pstk_6 12 0.0 -27.94)
-      (pin pstk_6 13 0.0 -30.48)
-      (pin pstk_6 14 0.0 -33.02)
-      (pin pstk_6 15 0.0 -35.56)
-      (pin pstk_6 16 0.0 -38.1)
-      (pin pstk_6 17 0.0 -40.64)
-      (pin pstk_6 18 0.0 -43.18)
-      (pin pstk_6 19 2.54 0.0)
-      (pin pstk_6 20 2.54 -2.54)
-      (pin pstk_6 21 2.54 -5.08)
-      (pin pstk_6 22 2.54 -7.62)
-      (pin pstk_6 23 2.54 -10.16)
-      (pin pstk_6 24 2.54 -12.7)
-      (pin pstk_6 25 2.54 -15.24)
-      (pin pstk_6 26 2.54 -17.78)
-      (pin pstk_6 27 2.54 -20.32)
-      (pin pstk_6 28 2.54 -22.86)
-      (pin pstk_6 29 2.54 -25.4)
-      (pin pstk_6 30 2.54 -27.94)
-      (pin pstk_6 31 2.54 -30.48)
-      (pin pstk_6 32 2.54 -33.02)
-      (pin pstk_6 33 2.54 -35.56)
-      (pin pstk_6 34 2.54 -38.1)
-      (pin pstk_6 35 2.54 -40.64)
-      (pin pstk_6 36 2.54 -43.18)
-    )
-    (image subc_2434
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2337
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3039
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3062
-      (pin pstk_7 1 -3.2 3.575)
-      (pin pstk_8 2 -3.2 2.925)
-      (pin pstk_8 3 -3.2 2.275)
-      (pin pstk_8 4 -3.2 1.625)
-      (pin pstk_8 5 -3.2 0.975)
-      (pin pstk_8 6 -3.2 0.325)
-      (pin pstk_8 7 -3.2 -0.325)
-      (pin pstk_8 8 -3.2 -0.975)
-      (pin pstk_8 9 -3.2 -1.625)
-      (pin pstk_8 10 -3.2 -2.275)
-      (pin pstk_8 11 -3.2 -2.925)
-      (pin pstk_8 12 -3.2 -3.575)
-      (pin pstk_8 13 3.2 -3.575)
-      (pin pstk_8 14 3.2 -2.925)
-      (pin pstk_8 15 3.2 -2.275)
-      (pin pstk_8 16 3.2 -1.625)
-      (pin pstk_8 17 3.2 -0.975)
-      (pin pstk_8 18 3.2 -0.325)
-      (pin pstk_8 19 3.2 0.325)
-      (pin pstk_8 20 3.2 0.975)
-      (pin pstk_8 21 3.2 1.625)
-      (pin pstk_8 22 3.2 2.275)
-      (pin pstk_8 23 3.2 2.925)
-      (pin pstk_8 24 3.2 3.575)
-    )
-    (image subc_2360
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_1778
-      (pin pstk_4 1 0.0 0.0)
-    )
-    (image subc_1810
-      (pin pstk_4 1 0.0 0.0)
-    )
-    (image subc_2845
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_1914
-      (pin pstk_5 1 0.0 0.0 (rotate 90))
-      (pin pstk_6 2 0.0 2.54 (rotate 90))
-      (pin pstk_6 3 0.0 5.08 (rotate 90))
-      (pin pstk_6 4 0.0 7.62 (rotate 90))
-      (pin pstk_6 5 0.0 10.16 (rotate 90))
-      (pin pstk_6 6 0.0 12.7 (rotate 90))
-      (pin pstk_6 7 0.0 15.24 (rotate 90))
-      (pin pstk_6 8 0.0 17.78 (rotate 90))
-    )
-    (image subc_3113
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2868
-      (pin pstk_7 1 -3.2 3.575)
-      (pin pstk_8 2 -3.2 2.925)
-      (pin pstk_8 3 -3.2 2.275)
-      (pin pstk_8 4 -3.2 1.625)
-      (pin pstk_8 5 -3.2 0.975)
-      (pin pstk_8 6 -3.2 0.325)
-      (pin pstk_8 7 -3.2 -0.325)
-      (pin pstk_8 8 -3.2 -0.975)
-      (pin pstk_8 9 -3.2 -1.625)
-      (pin pstk_8 10 -3.2 -2.275)
-      (pin pstk_8 11 -3.2 -2.925)
-      (pin pstk_8 12 -3.2 -3.575)
-      (pin pstk_8 13 3.2 -3.575)
-      (pin pstk_8 14 3.2 -2.925)
-      (pin pstk_8 15 3.2 -2.275)
-      (pin pstk_8 16 3.2 -1.625)
-      (pin pstk_8 17 3.2 -0.975)
-      (pin pstk_8 18 3.2 -0.325)
-      (pin pstk_8 19 3.2 0.325)
-      (pin pstk_8 20 3.2 0.975)
-      (pin pstk_8 21 3.2 1.625)
-      (pin pstk_8 22 3.2 2.275)
-      (pin pstk_8 23 3.2 2.925)
-      (pin pstk_8 24 3.2 3.575)
-    )
-    (image subc_3274
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3587
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3320
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3403
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3297
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3564
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_1949
+    (image subc_1972
       (pin pstk_5 1 0.0 0.0 (rotate -90))
       (pin pstk_6 2 0.0 2.54 (rotate -90))
       (pin pstk_6 3 0.0 5.08 (rotate -90))
@@ -391,63 +167,19 @@
       (pin pstk_6 7 0.0 15.24 (rotate -90))
       (pin pstk_6 8 0.0 17.78 (rotate -90))
     )
-    (image subc_2480
-      (pin pstk_7 1 -3.2 3.575)
-      (pin pstk_8 2 -3.2 2.925)
-      (pin pstk_8 3 -3.2 2.275)
-      (pin pstk_8 4 -3.2 1.625)
-      (pin pstk_8 5 -3.2 0.975)
-      (pin pstk_8 6 -3.2 0.325)
-      (pin pstk_8 7 -3.2 -0.325)
-      (pin pstk_8 8 -3.2 -0.975)
-      (pin pstk_8 9 -3.2 -1.625)
-      (pin pstk_8 10 -3.2 -2.275)
-      (pin pstk_8 11 -3.2 -2.925)
-      (pin pstk_8 12 -3.2 -3.575)
-      (pin pstk_8 13 3.2 -3.575)
-      (pin pstk_8 14 3.2 -2.925)
-      (pin pstk_8 15 3.2 -2.275)
-      (pin pstk_8 16 3.2 -1.625)
-      (pin pstk_8 17 3.2 -0.975)
-      (pin pstk_8 18 3.2 -0.325)
-      (pin pstk_8 19 3.2 0.325)
-      (pin pstk_8 20 3.2 0.975)
-      (pin pstk_8 21 3.2 1.625)
-      (pin pstk_8 22 3.2 2.275)
-      (pin pstk_8 23 3.2 2.925)
-      (pin pstk_8 24 3.2 3.575)
-    )
-    (image subc_2383
-      (pin pstk_7 1 -3.2 3.575)
-      (pin pstk_8 2 -3.2 2.925)
-      (pin pstk_8 3 -3.2 2.275)
-      (pin pstk_8 4 -3.2 1.625)
-      (pin pstk_8 5 -3.2 0.975)
-      (pin pstk_8 6 -3.2 0.325)
-      (pin pstk_8 7 -3.2 -0.325)
-      (pin pstk_8 8 -3.2 -0.975)
-      (pin pstk_8 9 -3.2 -1.625)
-      (pin pstk_8 10 -3.2 -2.275)
-      (pin pstk_8 11 -3.2 -2.925)
-      (pin pstk_8 12 -3.2 -3.575)
-      (pin pstk_8 13 3.2 -3.575)
-      (pin pstk_8 14 3.2 -2.925)
-      (pin pstk_8 15 3.2 -2.275)
-      (pin pstk_8 16 3.2 -1.625)
-      (pin pstk_8 17 3.2 -0.975)
-      (pin pstk_8 18 3.2 -0.325)
-      (pin pstk_8 19 3.2 0.325)
-      (pin pstk_8 20 3.2 0.975)
-      (pin pstk_8 21 3.2 1.625)
-      (pin pstk_8 22 3.2 2.275)
-      (pin pstk_8 23 3.2 2.925)
-      (pin pstk_8 24 3.2 3.575)
-    )
-    (image subc_3472
+    (image subc_3182
       (pin pstk_9 1 -0.75 0.0)
       (pin pstk_9 2 0.75 0.0)
     )
-    (image subc_2771
+    (image subc_2360
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3159
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2794
       (pin pstk_7 1 -3.2 3.575)
       (pin pstk_8 2 -3.2 2.925)
       (pin pstk_8 3 -3.2 2.275)
@@ -473,7 +205,15 @@
       (pin pstk_8 23 3.2 2.925)
       (pin pstk_8 24 3.2 3.575)
     )
-    (image subc_2577
+    (image subc_2554
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3274
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2891
       (pin pstk_7 1 -3.2 3.575)
       (pin pstk_8 2 -3.2 2.925)
       (pin pstk_8 3 -3.2 2.275)
@@ -499,7 +239,53 @@
       (pin pstk_8 23 3.2 2.925)
       (pin pstk_8 24 3.2 3.575)
     )
-    (image subc_1984
+    (image subc_3389
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+      (pin pstk_6 9 0.0 20.32 (rotate 90))
+      (pin pstk_6 10 0.0 22.86 (rotate 90))
+    )
+    (image subc_2868
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3366
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2503
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_2007
       (pin pstk_5 1 0.0 0.0 (rotate 90))
       (pin pstk_6 2 0.0 2.54 (rotate 90))
       (pin pstk_6 3 0.0 5.08 (rotate 90))
@@ -527,23 +313,7 @@
       (pin pstk_6 25 0.0 60.96 (rotate 90))
       (pin pstk_6 26 0.0 63.5 (rotate 90))
     )
-    (image subc_3159
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3205
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_3541
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2748
-      (pin pstk_9 1 -0.75 0.0)
-      (pin pstk_9 2 0.75 0.0)
-    )
-    (image subc_2965
+    (image subc_2309
       (pin pstk_7 1 -3.2 3.575)
       (pin pstk_8 2 -3.2 2.925)
       (pin pstk_8 3 -3.2 2.275)
@@ -569,11 +339,60 @@
       (pin pstk_8 23 3.2 2.925)
       (pin pstk_8 24 3.2 3.575)
     )
-    (image subc_3251
+    (image subc_2457
       (pin pstk_9 1 -0.75 0.0)
       (pin pstk_9 2 0.75 0.0)
     )
-    (image subc_2223
+    (image subc_2697
+      (pin pstk_7 1 -3.2 3.575)
+      (pin pstk_8 2 -3.2 2.925)
+      (pin pstk_8 3 -3.2 2.275)
+      (pin pstk_8 4 -3.2 1.625)
+      (pin pstk_8 5 -3.2 0.975)
+      (pin pstk_8 6 -3.2 0.325)
+      (pin pstk_8 7 -3.2 -0.325)
+      (pin pstk_8 8 -3.2 -0.975)
+      (pin pstk_8 9 -3.2 -1.625)
+      (pin pstk_8 10 -3.2 -2.275)
+      (pin pstk_8 11 -3.2 -2.925)
+      (pin pstk_8 12 -3.2 -3.575)
+      (pin pstk_8 13 3.2 -3.575)
+      (pin pstk_8 14 3.2 -2.925)
+      (pin pstk_8 15 3.2 -2.275)
+      (pin pstk_8 16 3.2 -1.625)
+      (pin pstk_8 17 3.2 -0.975)
+      (pin pstk_8 18 3.2 -0.325)
+      (pin pstk_8 19 3.2 0.325)
+      (pin pstk_8 20 3.2 0.975)
+      (pin pstk_8 21 3.2 1.625)
+      (pin pstk_8 22 3.2 2.275)
+      (pin pstk_8 23 3.2 2.925)
+      (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_3541
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2965
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3518
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2651
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_1801
+      (pin pstk_4 1 0.0 0.0)
+    )
+    (image subc_3039
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2183
       (pin pstk_5 1 0.0 0.0)
       (pin pstk_6 2 0.0 -2.54)
       (pin pstk_6 3 0.0 -5.08)
@@ -611,7 +430,114 @@
       (pin pstk_6 35 2.54 -40.64)
       (pin pstk_6 36 2.54 -43.18)
     )
-    (image subc_2286
+    (image subc_1817
+      (pin pstk_4 1 0.0 0.0)
+    )
+    (image subc_2130
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+      (pin pstk_6 9 0.0 20.32 (rotate 90))
+      (pin pstk_6 10 0.0 22.86 (rotate 90))
+      (pin pstk_6 11 0.0 25.4 (rotate 90))
+      (pin pstk_6 12 0.0 27.94 (rotate 90))
+      (pin pstk_6 13 0.0 30.48 (rotate 90))
+      (pin pstk_6 14 0.0 33.02 (rotate 90))
+      (pin pstk_6 15 0.0 35.56 (rotate 90))
+      (pin pstk_6 16 0.0 38.1 (rotate 90))
+      (pin pstk_6 17 0.0 40.64 (rotate 90))
+      (pin pstk_6 18 0.0 43.18 (rotate 90))
+      (pin pstk_6 19 0.0 45.72 (rotate 90))
+      (pin pstk_6 20 0.0 48.26 (rotate 90))
+      (pin pstk_6 21 0.0 50.8 (rotate 90))
+      (pin pstk_6 22 0.0 53.34 (rotate 90))
+      (pin pstk_6 23 0.0 55.88 (rotate 90))
+      (pin pstk_6 24 0.0 58.42 (rotate 90))
+      (pin pstk_6 25 0.0 60.96 (rotate 90))
+      (pin pstk_6 26 0.0 63.5 (rotate 90))
+    )
+    (image subc_1900
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+      (pin pstk_6 9 0.0 20.32 (rotate 90))
+      (pin pstk_6 10 0.0 22.86 (rotate 90))
+    )
+    (image subc_3136
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2060
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+    )
+    (image subc_3320
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3251
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_1849
+      (pin pstk_4 1 0.0 0.0)
+    )
+    (image subc_2771
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_1865
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+    )
+    (image subc_3564
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2480
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_1833
+      (pin pstk_4 1 0.0 0.0)
+    )
+    (image subc_2095
+      (pin pstk_5 1 0.0 0.0 (rotate 90))
+      (pin pstk_6 2 0.0 2.54 (rotate 90))
+      (pin pstk_6 3 0.0 5.08 (rotate 90))
+      (pin pstk_6 4 0.0 7.62 (rotate 90))
+      (pin pstk_6 5 0.0 10.16 (rotate 90))
+      (pin pstk_6 6 0.0 12.7 (rotate 90))
+      (pin pstk_6 7 0.0 15.24 (rotate 90))
+      (pin pstk_6 8 0.0 17.78 (rotate 90))
+    )
+    (image subc_2748
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2988
       (pin pstk_7 1 -3.2 3.575)
       (pin pstk_8 2 -3.2 2.925)
       (pin pstk_8 3 -3.2 2.275)
@@ -636,12 +562,62 @@
       (pin pstk_8 22 3.2 2.275)
       (pin pstk_8 23 3.2 2.925)
       (pin pstk_8 24 3.2 3.575)
+    )
+    (image subc_3449
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2246
+      (pin pstk_5 1 0.0 0.0)
+      (pin pstk_6 2 0.0 -2.54)
+      (pin pstk_6 3 0.0 -5.08)
+      (pin pstk_6 4 0.0 -7.62)
+      (pin pstk_6 5 0.0 -10.16)
+      (pin pstk_6 6 0.0 -12.7)
+      (pin pstk_6 7 0.0 -15.24)
+      (pin pstk_6 8 0.0 -17.78)
+      (pin pstk_6 9 0.0 -20.32)
+      (pin pstk_6 10 0.0 -22.86)
+      (pin pstk_6 11 0.0 -25.4)
+      (pin pstk_6 12 0.0 -27.94)
+      (pin pstk_6 13 0.0 -30.48)
+      (pin pstk_6 14 0.0 -33.02)
+      (pin pstk_6 15 0.0 -35.56)
+      (pin pstk_6 16 0.0 -38.1)
+      (pin pstk_6 17 0.0 -40.64)
+      (pin pstk_6 18 0.0 -43.18)
+      (pin pstk_6 19 2.54 0.0)
+      (pin pstk_6 20 2.54 -2.54)
+      (pin pstk_6 21 2.54 -5.08)
+      (pin pstk_6 22 2.54 -7.62)
+      (pin pstk_6 23 2.54 -10.16)
+      (pin pstk_6 24 2.54 -12.7)
+      (pin pstk_6 25 2.54 -15.24)
+      (pin pstk_6 26 2.54 -17.78)
+      (pin pstk_6 27 2.54 -20.32)
+      (pin pstk_6 28 2.54 -22.86)
+      (pin pstk_6 29 2.54 -25.4)
+      (pin pstk_6 30 2.54 -27.94)
+      (pin pstk_6 31 2.54 -30.48)
+      (pin pstk_6 32 2.54 -33.02)
+      (pin pstk_6 33 2.54 -35.56)
+      (pin pstk_6 34 2.54 -38.1)
+      (pin pstk_6 35 2.54 -40.64)
+      (pin pstk_6 36 2.54 -43.18)
     )
     (image subc_3343
       (pin pstk_9 1 -0.75 0.0)
       (pin pstk_9 2 0.75 0.0)
     )
-    (image subc_2674
+    (image subc_3062
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2383
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3085
       (pin pstk_7 1 -3.2 3.575)
       (pin pstk_8 2 -3.2 2.925)
       (pin pstk_8 3 -3.2 2.275)
@@ -667,11 +643,35 @@
       (pin pstk_8 23 3.2 2.925)
       (pin pstk_8 24 3.2 3.575)
     )
-    (image subc_3016
+    (image subc_2845
       (pin pstk_9 1 -0.75 0.0)
       (pin pstk_9 2 0.75 0.0)
     )
-    (image subc_2822
+    (image subc_2577
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3228
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3495
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3610
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3297
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_3205
+      (pin pstk_9 1 -0.75 0.0)
+      (pin pstk_9 2 0.75 0.0)
+    )
+    (image subc_2674
       (pin pstk_9 1 -0.75 0.0)
       (pin pstk_9 2 0.75 0.0)
     )
@@ -680,184 +680,184 @@
   )
   (placement
     (place_control (flip_style rotate_first))
-    (component subc_1778
+    (component subc_1801
       (place H1 7.0 83.0 front 0)
     )
-    (component subc_1794
+    (component subc_1817
       (place H2 7.0 7.0 front 0)
     )
-    (component subc_1810
+    (component subc_1833
       (place H3 148.0 7.0 front 0)
     )
-    (component subc_1826
+    (component subc_1849
       (place H4 148.0 83.0 front 0)
     )
-    (component subc_1842
+    (component subc_1865
       (place J1 43.11 18.99 front -90 (property (value 'Conn_01x08')))
     )
-    (component subc_1877
+    (component subc_1900
       (place J2 33.645 67.16 front -90 (property (value 'Conn_01x10')))
     )
-    (component subc_1914
+    (component subc_1937
       (place J3 65.849999 18.99 front -90 (property (value 'Conn_01x08')))
     )
-    (component subc_1949
+    (component subc_1972
       (place J4 78.655 67.130001 front 90 (property (value 'Conn_01x08')))
     )
-    (component subc_1984
+    (component subc_2007
       (place J5 40.639999 5.83 front -90 (property (value 'J_ANALOG')))
     )
-    (component subc_2037
+    (component subc_2060
       (place J6 88.63 18.99 front -90 (property (value 'Conn_01x08')))
     )
-    (component subc_2072
+    (component subc_2095
       (place J7 83.13 67.08 front -90 (property (value 'Conn_01x08')))
     )
-    (component subc_2107
+    (component subc_2130
       (place J8 39.02 83.170001 front -90 (property (value 'J_DIGITAL')))
     )
-    (component subc_2160
+    (component subc_2183
       (place J9 108.889999 67.32 front 0 (property (value 'JSIDE')))
     )
-    (component subc_2223
+    (component subc_2246
       (place J10 144.73 64.5 front 0 (property (value 'JSIDE_5V')))
     )
-    (component subc_2286
+    (component subc_2309
       (place U1 46.3 74.700001 front 0 (property (value 'SN74LVC8T245PW')))
     )
-    (component subc_2337
+    (component subc_2360
       (place C1 49.3 80.700001 front 0 (property (value '0.1uF')))
     )
-    (component subc_2360
+    (component subc_2383
       (place C2 43.3 80.700001 front 0 (property (value '0.1uF')))
     )
-    (component subc_2383
+    (component subc_2406
       (place U2 78.8 31.5 front 0 (property (value 'SN74LVC8T245PW')))
     )
-    (component subc_2434
+    (component subc_2457
       (place C3 81.8 37.5 front 0 (property (value '0.1uF')))
     )
-    (component subc_2457
+    (component subc_2480
       (place C4 75.8 37.5 front 0 (property (value '0.1uF')))
     )
-    (component subc_2480
+    (component subc_2503
       (place U3 68.6 73.8 front 0 (property (value 'SN74LVC8T245PW')))
     )
-    (component subc_2531
+    (component subc_2554
       (place C5 71.6 79.8 front 0 (property (value '0.1uF')))
     )
-    (component subc_2554
+    (component subc_2577
       (place C6 65.6 79.8 front 0 (property (value '0.1uF')))
     )
-    (component subc_2577
+    (component subc_2600
       (place U4 94.4 31.400001 front 0 (property (value 'SN74LVC8T245PW')))
     )
-    (component subc_2628
+    (component subc_2651
       (place C7 97.4 37.400001 front 0 (property (value '0.1uF')))
     )
-    (component subc_2651
+    (component subc_2674
       (place C8 91.4 37.400001 front 0 (property (value '0.1uF')))
     )
-    (component subc_2674
+    (component subc_2697
       (place U5 89.8 74.8 front 0 (property (value 'SN74LVC8T245PW')))
     )
-    (component subc_2725
+    (component subc_2748
       (place C9 92.8 80.8 front 0 (property (value '0.1uF')))
     )
-    (component subc_2748
+    (component subc_2771
       (place C10 86.8 80.8 front 0 (property (value '0.1uF')))
     )
-    (component subc_2771
+    (component subc_2794
       (place U6 126.6 58.3 front 0 (property (value 'SN74LVC8T245PW')))
     )
-    (component subc_2822
+    (component subc_2845
       (place C11 129.6 64.3 front 0 (property (value '0.1uF')))
     )
-    (component subc_2845
+    (component subc_2868
       (place C12 123.6 64.3 front 0 (property (value '0.1uF')))
     )
-    (component subc_2868
+    (component subc_2891
       (place U7 127.199999 21.4 front 0 (property (value 'SN74LVC8T245PW')))
     )
-    (component subc_2919
+    (component subc_2942
       (place C13 130.199999 27.4 front 0 (property (value '0.1uF')))
     )
-    (component subc_2942
+    (component subc_2965
       (place C14 124.199999 27.4 front 0 (property (value '0.1uF')))
     )
-    (component subc_2965
+    (component subc_2988
       (place U8 126.5 46.5 front 0 (property (value 'SN74LVC8T245PW')))
     )
-    (component subc_3016
+    (component subc_3039
       (place C15 129.5 52.5 front 0 (property (value '0.1uF')))
     )
-    (component subc_3039
+    (component subc_3062
       (place C16 123.5 52.5 front 0 (property (value '0.1uF')))
     )
-    (component subc_3062
+    (component subc_3085
       (place U9 126.699999 34.8 front 0 (property (value 'SN74LVC8T245PW')))
     )
-    (component subc_3113
+    (component subc_3136
       (place C17 129.699999 40.8 front 0 (property (value '0.1uF')))
     )
-    (component subc_3136
+    (component subc_3159
       (place C18 123.699999 40.8 front 0 (property (value '0.1uF')))
     )
-    (component subc_3159
-      (place C19 10.0 5.0 front 0 (property (value '0.1uF')))
-    )
     (component subc_3182
-      (place C20 25.0 5.0 front 0 (property (value '0.1uF')))
+      (place C19 10.0 10.0 front 0 (property (value '0.1uF')))
     )
     (component subc_3205
-      (place C21 40.0 5.0 front 0 (property (value '0.1uF')))
+      (place C20 25.0 10.0 front 0 (property (value '0.1uF')))
     )
     (component subc_3228
-      (place C22 55.0 5.0 front 0 (property (value '0.1uF')))
+      (place C21 40.0 10.0 front 0 (property (value '0.1uF')))
     )
     (component subc_3251
-      (place C23 70.0 5.0 front 0 (property (value '0.1uF')))
+      (place C22 55.0 10.0 front 0 (property (value '0.1uF')))
     )
     (component subc_3274
-      (place C24 85.0 5.0 front 0 (property (value '0.1uF')))
+      (place C23 70.0 10.0 front 0 (property (value '0.1uF')))
     )
     (component subc_3297
-      (place C25 100.0 5.0 front 0 (property (value '0.1uF')))
+      (place C24 85.0 10.0 front 0 (property (value '0.1uF')))
     )
     (component subc_3320
-      (place C26 115.0 5.0 front 0 (property (value '0.1uF')))
+      (place C25 100.0 10.0 front 0 (property (value '0.1uF')))
     )
     (component subc_3343
-      (place C27 130.0 5.0 front 0 (property (value '0.1uF')))
+      (place C26 115.0 10.0 front 0 (property (value '0.1uF')))
     )
     (component subc_3366
+      (place C27 130.0 10.0 front 0 (property (value '0.1uF')))
+    )
+    (component subc_3389
       (place J11 40.0 15.0 front -90 (property (value 'DIR_CTRL')))
     )
-    (component subc_3403
+    (component subc_3426
       (place R1 51.3 69.700001 front 0 (property (value '10K')))
     )
-    (component subc_3426
+    (component subc_3449
       (place R2 83.8 26.5 front 0 (property (value '10K')))
     )
-    (component subc_3449
+    (component subc_3472
       (place R3 73.6 68.8 front 0 (property (value '10K')))
     )
-    (component subc_3472
+    (component subc_3495
       (place R4 99.4 26.400001 front 0 (property (value '10K')))
     )
-    (component subc_3495
+    (component subc_3518
       (place R5 94.8 69.8 front 0 (property (value '10K')))
     )
-    (component subc_3518
+    (component subc_3541
       (place R6 131.6 53.3 front 0 (property (value '10K')))
     )
-    (component subc_3541
+    (component subc_3564
       (place R7 132.199999 16.4 front 0 (property (value '10K')))
     )
-    (component subc_3564
+    (component subc_3587
       (place R8 131.5 41.5 front 0 (property (value '10K')))
     )
-    (component subc_3587
+    (component subc_3610
       (place R9 131.699999 29.8 front 0 (property (value '10K')))
     )
   )
