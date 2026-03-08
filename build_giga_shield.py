@@ -458,10 +458,16 @@ def build_pcb():
     out.append('Styles["Signal,254000nm,914400nm,508000nm,254000nm:Power,508000nm,1524000nm,889000nm,254000nm:Fat,1016000nm,1524000nm,889000nm,254000nm:Skinny,152400nm,610108nm,299974nm,152400nm"]')
     out.append('')
 
-    # Symbol table (minimal - space only)
-    out.append("Symbol[' ' 457200nm]")
-    out.append('(')
-    out.append(')')
+    # Symbol table (loaded from dual-z80 reference board)
+    import os
+    symbols_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'symbols.txt')
+    if os.path.exists(symbols_path):
+        with open(symbols_path) as sf:
+            out.append(sf.read())
+    else:
+        out.append("Symbol[' ' 457200nm]")
+        out.append('(')
+        out.append(')')
     out.append('')
 
     # Elements
@@ -487,6 +493,19 @@ def build_pcb():
     out.append('')
     out.append('Layer(4 "silk")')
     out.append('(')
+    # J11 DIR control header pin labels
+    j11_labels = ['U1', 'U2', 'U3', 'U4', 'U5', 'U6', 'U7', 'U8', 'U9', 'GND']
+    j11_base_x = mm(40)
+    j11_base_y = mm(75)
+    pitch = mm(2.54)
+    label_offset_y = mm(3.0)  # below the header pins
+    for i, label in enumerate(j11_labels):
+        lx = j11_base_x + i * pitch
+        ly = j11_base_y + label_offset_y
+        # direction 1 = 90° CCW rotation (text reads bottom-to-top)
+        out.append(f'\tText[{lx}nm {ly}nm 1 60 "{label}" "clearline"]')
+    # Header title above J11
+    out.append(f'\tText[{j11_base_x}nm {j11_base_y - mm(3)}nm 0 80 "J11 DIR" "clearline"]')
     out.append(')')
     out.append('')
     out.append('Layer(5 "silk")')
