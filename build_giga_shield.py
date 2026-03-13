@@ -517,6 +517,9 @@ def build_pcb():
         out.append(f'\tText[{lx}nm {ly}nm 1 120 "{label}" "clearline"]')
     # Header title to the left of J11
     out.append(f'\tText[{j11_base_x - mm(10)}nm {j11_base_y - mm(1)}nm 0 150 "J11 DIR" "clearline"]')
+    # Board branding and version
+    out.append(f'\tText[{mm(55)}nm {mm(86)}nm 0 150 "tinycomputers.io" "clearline"]')
+    out.append(f'\tText[{mm(87)}nm {mm(86)}nm 0 150 "v0.2" "clearline"]')
     out.append(')')
     out.append('')
 
