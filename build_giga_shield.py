@@ -4,7 +4,7 @@ Build a pcb-rnd board for the Arduino Giga R1 Shield with SN74LVC8T245 driven le
 Replaces the original TXB0108PW auto-sensing design.
 
 Board: 155mm x 90mm (matching original KiCad design)
-Components: 9x SN74LVC8T245PW (TSSOP-24), connectors, caps, resistors
+Components: 10x SN74LVC8T245PW (TSSOP-24), connectors, caps, resistors
 """
 
 # Board dimensions (nanometers)
@@ -50,10 +50,11 @@ SHIFTERS = {
     'U3': kpos(174.6, 46.7),
     'U4': kpos(200.4, 89.1),
     'U5': kpos(195.8, 45.7),
-    'U6': kpos(232.6, 62.2),
-    'U7': kpos(233.2, 99.1),
-    'U8': kpos(232.5, 74.0),
-    'U9': kpos(232.7, 85.7),
+    'U6': kpos(224.0, 56.0),     # upper-left, near J9 upper pins (D22-D36 even)
+    'U8': kpos(240.0, 56.0),     # upper-right, near J10 upper pins (D21-D35 odd)
+    'U9': kpos(224.0, 74.0),     # middle-left (D37-D53 control inputs)
+    'U7': kpos(240.0, 74.0),     # middle-right (D42-D49 data bus)
+    'U10': kpos(224.0, 92.0),    # lower-left, well clear of headers (CLK, RESET, INT, NMI)
 }
 
 SHIFTER_NETS = {
@@ -87,9 +88,10 @@ SHIFTER_NETS = {
         'b': ['PJ12', 'PG12', 'PJ14', 'PJ15', 'PK3', 'PK4', 'PK5', 'PK6'],
         'dir_net': 'DIR_U6',
     },
+    # U7: Z80 data bus (D0-D7) — bidirectional, DIR toggled per bus cycle
     'U7': {
-        'a': ['D37', 'D39', 'D41', 'D43', 'D45', 'D47', 'D49', 'D51'],
-        'b': ['PJ6', 'PI14', 'PK7', 'PI10', 'PI13', 'PB2', 'PE4', 'PE5'],
+        'a': ['D42', 'D43', 'D44', 'D45', 'D46', 'D47', 'D48', 'D49'],
+        'b': ['PI15', 'PI10', 'PG10', 'PI13', 'PH15', 'PB2', 'PK0', 'PE4'],
         'dir_net': 'DIR_U7',
     },
     'U8': {
@@ -97,10 +99,19 @@ SHIFTER_NETS = {
         'b': ['PH4', 'PG13', 'PJ0', 'PJ1', 'PJ2', 'PJ3', 'PJ4', 'PJ5'],
         'dir_net': 'DIR_U8',
     },
+    # U9: Z80/286 control inputs — fixed direction (RetroShield -> Giga)
+    # Channels 6-8 spare (NC)
     'U9': {
-        'a': ['D38', 'D40', 'D42', 'D44', 'D46', 'D48', 'D50', 'D52'],
-        'b': ['PJ7', 'PE6', 'PI15', 'PG10', 'PH15', 'PK0', 'PI11', 'PK2'],
+        'a': ['D37', 'D39', 'D40', 'D41', 'D53', 'NC_U9A6', 'NC_U9A7', 'NC_U9A8'],
+        'b': ['PJ6', 'PI14', 'PE6', 'PK7', 'PG7', 'NC_U9B6', 'NC_U9B7', 'NC_U9B8'],
         'dir_net': 'DIR_U9',
+    },
+    # U10: Z80/286 control outputs — fixed direction (Giga -> RetroShield)
+    # D38=RESET, D50=INT, D51=NMI, D52=CLK; channels 5-8 spare (NC)
+    'U10': {
+        'a': ['D38', 'D50', 'D51', 'D52', 'NC_U10A5', 'NC_U10A6', 'NC_U10A7', 'NC_U10A8'],
+        'b': ['PJ7', 'PI11', 'PE5', 'PK2', 'NC_U10B5', 'NC_U10B6', 'NC_U10B7', 'NC_U10B8'],
+        'dir_net': 'DIR_U10',
     },
 }
 
@@ -193,8 +204,8 @@ def pin_header_element(ref, val, x, y, npins, ncols=1, rot=0):
     lines.append('(')
 
     pin_num = 1
-    for col in range(ncols):
-        for row in range(rows):
+    for row in range(rows):
+        for col in range(ncols):
             lpx = col * pitch
             lpy = row * pitch
             rpx, rpy = rotate(lpx, lpy)
@@ -288,13 +299,18 @@ def build_pcb():
         x, y = info['pos']
         elements.append(pin_header_element(ref, info['val'], x, y, info['npins'], info['ncols'], info.get('rot', 0)))
 
+    # VIN: board-level power input, no routing needed
+    # GND: handled by post-processing script (bottom layer traces + vias)
+    # +5V, +3V3: routed by autorouter
+    POWER_NETS = {'GND', 'VIN'}
+
     # Connector net assignments
     # J5 (J_ANALOG) 5V side
     j5 = ['NC', 'IOREF_3V3', 'NRST', '+3V3', '+5V', 'GND', 'GND', 'VIN',
           'A0', 'A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7',
           'A8', 'A9', 'A10', 'A11', 'DAC0', 'DAC1', 'CAN_RX', 'CAN_TX', 'NC', 'NC']
     for i, n in enumerate(j5):
-        if n != 'NC':
+        if n != 'NC' and n not in POWER_NETS:
             add_net(n, 'J5', i+1)
 
     # J8 (J_DIGITAL) 5V side
@@ -303,7 +319,8 @@ def build_pcb():
           'PB8', 'PB4', 'PD13_5V', 'PA7', 'PJ8', 'PA2', 'PA3', 'PA9',
           'PB7', 'PG14', 'PC7', 'PH13', 'PI9', 'PD5', 'PD6', 'PB11', 'PH4']
     for i, n in enumerate(j8):
-        add_net(n, 'J8', i+1)
+        if n not in POWER_NETS:
+            add_net(n, 'J8', i+1)
 
     # J1 (Giga 3.3V header - analog)
     j1 = ['PC4', 'PC5', 'PB0', 'PB1', 'PC3', 'PC2', 'PC0', 'PA0']
@@ -314,7 +331,8 @@ def build_pcb():
     j2 = ['VIN', '+3V3', '+3V3', 'IOREF_3V3', 'NRST',
           'PC2_C', 'PC3_C', 'PA1_C', 'PA0_C', 'PB13']
     for i, n in enumerate(j2):
-        add_net(n, 'J2', i+1)
+        if n not in POWER_NETS:
+            add_net(n, 'J2', i+1)
 
     # J3 (Giga 3.3V header - digital D1-D8)
     j3 = ['D8', 'D7', 'D6', 'D5', 'D4', 'D3', 'D2', 'D1']
@@ -334,7 +352,8 @@ def build_pcb():
     # J7 (Giga 3.3V header - D21 + analog ext)
     j7 = ['D21', 'PA4', 'PA5', 'PB5', '+3V3', 'GND', '+5V', 'GND']
     for i, n in enumerate(j7):
-        add_net(n, 'J7', i+1)
+        if n not in POWER_NETS:
+            add_net(n, 'J7', i+1)
 
     # J9 (JSIDE 3.3V 2x18)
     j9 = ['+5V', '+5V',
@@ -344,7 +363,8 @@ def build_pcb():
           'D46', 'D47', 'D48', 'D49', 'D50', 'D51', 'D52', 'D53',
           'GND', 'GND']
     for i, n in enumerate(j9):
-        add_net(n, 'J9', i+1)
+        if n not in POWER_NETS:
+            add_net(n, 'J9', i+1)
 
     # J10 (JSIDE_5V 2x18)
     j10 = ['+5V', '+5V',
@@ -354,11 +374,12 @@ def build_pcb():
            'PH15', 'PB2', 'PK0', 'PE4', 'PI11', 'PE5', 'PK2', 'PG7',
            'GND', 'GND']
     for i, n in enumerate(j10):
-        add_net(n, 'J10', i+1)
+        if n not in POWER_NETS:
+            add_net(n, 'J10', i+1)
 
     # Level shifters
     cap_num = 1
-    for uref in ['U1','U2','U3','U4','U5','U6','U7','U8','U9']:
+    for uref in ['U1','U2','U3','U4','U5','U6','U7','U8','U9','U10']:
         ux, uy = SHIFTERS[uref]
         sn = SHIFTER_NETS[uref]
 
@@ -374,17 +395,18 @@ def build_pcb():
         # Pins 7-10: A5-A8
         for i in range(4):
             add_net(sn['a'][4+i], uref, i+7)
-        # Pin 11: OE# (tie to GND = always enabled)
+        # Pin 11: OE# (active low, tie to GND)
         add_net('GND', uref, 11)
         # Pin 12: GND
         add_net('GND', uref, 12)
+        # Pin 17: VCCB
+        add_net('+5V', uref, 17)
         # Pin 13: B8, 14: B7, 15: B6, 16: B5
         add_net(sn['b'][7], uref, 13)  # B8
         add_net(sn['b'][6], uref, 14)  # B7
         add_net(sn['b'][5], uref, 15)  # B6
         add_net(sn['b'][4], uref, 16)  # B5
-        # Pin 17: VCCB
-        add_net('+5V', uref, 17)
+        # Pin 17: VCCB (connects via pour)
         # Pin 18: B4, 19: B3, 20: B2, 21: B1
         add_net(sn['b'][3], uref, 18)  # B4
         add_net(sn['b'][2], uref, 19)  # B3
@@ -415,6 +437,8 @@ def build_pcb():
         cref = f'C{cap_num}'
         cx = mm(15 + i * 14)
         cy = mm(80)
+        if i == 8:  # C29: shift right to clear U10
+            cx = mm(141)
         elements.append(smd_0603_element(cref, '0.1uF', cx, cy))
         add_net('+3V3' if i % 2 == 0 else '+5V', cref, 1)
         add_net('GND', cref, 2)
@@ -422,20 +446,22 @@ def build_pcb():
 
     # DIR control header (J11) - rotated 90° to run horizontally
     j11_x, j11_y = mm(40), mm(75)
-    elements.append(pin_header_element('J11', 'DIR_CTRL', j11_x, j11_y, 10, 1, rot=90))
+    elements.append(pin_header_element('J11', 'DIR_CTRL', j11_x, j11_y, 11, 1, rot=90))
     dir_names = ['DIR_U1','DIR_U2','DIR_U3','DIR_U4','DIR_U5',
-                 'DIR_U6','DIR_U7','DIR_U8','DIR_U9','GND']
+                 'DIR_U6','DIR_U7','DIR_U8','DIR_U9','DIR_U10','GND']
     for i, n in enumerate(dir_names):
-        add_net(n, 'J11', i+1)
+        if n not in POWER_NETS:
+            add_net(n, 'J11', i+1)
 
     # DIR pull-down resistors (default A→B)
     # Custom offsets to avoid overlapping nearby headers and caps
     resistor_offsets = {
-        3: (mm(8), mm(-5)),   # R3: further right to clear C5
-        6: (mm(5), mm(-10)),  # R6: well above U6 to clear body and U8's C15
-        8: (mm(8), mm(5)),    # R8: further right to clear U9's C17
+        3: (mm(8), mm(-5)),    # R3: further right to clear C5
+        6: (mm(5), mm(-10)),   # R6: well above U6 to clear body and U8's C15
+        8: (mm(8), mm(5)),     # R8: further right to clear U9's C17
+        10: (mm(5), mm(-8)),   # R10: above U10 to clear IC body
     }
-    for i in range(9):
+    for i in range(10):
         rref = f'R{i+1}'
         uref = f'U{i+1}'
         sx, sy = SHIFTERS[uref]
@@ -461,7 +487,8 @@ def build_pcb():
     out.append('Thermal[0.500000]')
     out.append('DRC[152400nm 254000nm 254000nm 152400nm 381000nm 254000nm]')
     out.append('Flags("nameonpcb,clearnew")')
-    out.append('Groups("1,c:2,s:3")')
+    # 6 layers: top(1), GND(2), signal(3), signal(4), GND(5), bottom(6), outline(7)
+    out.append('Groups("1,c:2:3:4:5:6,s:7")')
     out.append('Styles["Signal,254000nm,914400nm,508000nm,254000nm:Power,508000nm,1524000nm,889000nm,254000nm:Fat,1016000nm,1524000nm,889000nm,254000nm:Skinny,152400nm,610108nm,299974nm,152400nm"]')
     out.append('')
 
@@ -481,16 +508,32 @@ def build_pcb():
     for elem in elements:
         out.append(elem)
 
-    # Layers
+    # Layers: 6 copper + outline + 2 silk
     out.append('Layer(1 "top")')
     out.append('(')
     out.append(')')
     out.append('')
-    out.append('Layer(2 "bottom")')
+    out.append('Layer(2 "GND1")')
     out.append('(')
     out.append(')')
     out.append('')
-    out.append('Layer(3 "outline")')
+    out.append('Layer(3 "signal1")')
+    out.append('(')
+    out.append(')')
+    out.append('')
+    out.append('Layer(4 "signal2")')
+    out.append('(')
+    out.append(')')
+    out.append('')
+    out.append('Layer(5 "GND2")')
+    out.append('(')
+    out.append(')')
+    out.append('')
+    out.append('Layer(6 "bottom")')
+    out.append('(')
+    out.append(')')
+    out.append('')
+    out.append('Layer(7 "outline")')
     out.append('(')
     out.append(f'\tLine[254000nm 254000nm {BOARD_W - 254000}nm 254000nm 254000nm 508000nm "clearline"]')
     out.append(f'\tLine[{BOARD_W - 254000}nm 254000nm {BOARD_W - 254000}nm {BOARD_H - 254000}nm 254000nm 508000nm "clearline"]')
@@ -498,14 +541,14 @@ def build_pcb():
     out.append(f'\tLine[254000nm {BOARD_H - 254000}nm 254000nm 254000nm 254000nm 508000nm "clearline"]')
     out.append(')')
     out.append('')
-    out.append('Layer(4 "silk")')
+    out.append('Layer(8 "silk")')
     out.append('(')
     out.append(')')
     out.append('')
-    out.append('Layer(5 "silk")')
+    out.append('Layer(9 "silk")')
     out.append('(')
     # J11 DIR control header pin labels (top silk)
-    j11_labels = ['U1', 'U2', 'U3', 'U4', 'U5', 'U6', 'U7', 'U8', 'U9', 'GND']
+    j11_labels = ['U1', 'U2', 'U3', 'U4', 'U5', 'U6', 'U7', 'U8', 'U9', 'U10', 'GND']
     j11_base_x = mm(40)
     j11_base_y = mm(75)
     pitch = mm(2.54)
@@ -519,7 +562,7 @@ def build_pcb():
     out.append(f'\tText[{j11_base_x - mm(10)}nm {j11_base_y - mm(1)}nm 0 150 "J11 DIR" "clearline"]')
     # Board branding and version
     out.append(f'\tText[{mm(55)}nm {mm(86)}nm 0 150 "tinycomputers.io" "clearline"]')
-    out.append(f'\tText[{mm(87)}nm {mm(86)}nm 0 150 "v0.2" "clearline"]')
+    out.append(f'\tText[{mm(87)}nm {mm(86)}nm 0 150 "v0.4" "clearline"]')
     out.append(')')
     out.append('')
 
@@ -548,5 +591,5 @@ if __name__ == '__main__':
         f.write(build_pcb())
     print(f"Generated {outfile}")
     print(f"Board: {BOARD_W/1e6:.0f}mm x {BOARD_H/1e6:.0f}mm")
-    print(f"9x SN74LVC8T245PW (TSSOP-24) level shifters")
+    print(f"10x SN74LVC8T245PW (TSSOP-24) level shifters")
     print(f"DIR control via J11 (1x10 header)")

@@ -11,7 +11,7 @@ PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[152400nm 254000nm 254000nm 152400nm 381000nm 254000nm]
 Flags("nameonpcb,clearnew")
-Groups("1,c:2,s:3")
+Groups("1,c:2:3:4:5:6,s:7")
 Styles["Signal,254000nm,914400nm,508000nm,254000nm:Power,508000nm,1524000nm,889000nm,254000nm:Fat,1016000nm,1524000nm,889000nm,254000nm:Skinny,152400nm,610108nm,299974nm,152400nm"]
 
 Symbol[' ' 457200nm]
@@ -988,40 +988,40 @@ Element["" "HEADER26_1" "J8" "J_DIGITAL" 39020000nm 6829999nm 0nm 0nm 0 100 ""]
 Element["" "HEADER36_2" "J9" "JSIDE" 108889999nm 22680000nm 0nm 0nm 0 100 ""]
 (
 	Pin[0nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "1" "1" "square"]
-	Pin[0nm 2540000nm 1700000nm 300000nm 1800000nm 1000000nm "2" "2" ""]
-	Pin[0nm 5080000nm 1700000nm 300000nm 1800000nm 1000000nm "3" "3" ""]
-	Pin[0nm 7620000nm 1700000nm 300000nm 1800000nm 1000000nm "4" "4" ""]
-	Pin[0nm 10160000nm 1700000nm 300000nm 1800000nm 1000000nm "5" "5" ""]
-	Pin[0nm 12700000nm 1700000nm 300000nm 1800000nm 1000000nm "6" "6" ""]
-	Pin[0nm 15240000nm 1700000nm 300000nm 1800000nm 1000000nm "7" "7" ""]
-	Pin[0nm 17780000nm 1700000nm 300000nm 1800000nm 1000000nm "8" "8" ""]
-	Pin[0nm 20320000nm 1700000nm 300000nm 1800000nm 1000000nm "9" "9" ""]
-	Pin[0nm 22860000nm 1700000nm 300000nm 1800000nm 1000000nm "10" "10" ""]
-	Pin[0nm 25400000nm 1700000nm 300000nm 1800000nm 1000000nm "11" "11" ""]
-	Pin[0nm 27940000nm 1700000nm 300000nm 1800000nm 1000000nm "12" "12" ""]
-	Pin[0nm 30480000nm 1700000nm 300000nm 1800000nm 1000000nm "13" "13" ""]
-	Pin[0nm 33020000nm 1700000nm 300000nm 1800000nm 1000000nm "14" "14" ""]
-	Pin[0nm 35560000nm 1700000nm 300000nm 1800000nm 1000000nm "15" "15" ""]
-	Pin[0nm 38100000nm 1700000nm 300000nm 1800000nm 1000000nm "16" "16" ""]
-	Pin[0nm 40640000nm 1700000nm 300000nm 1800000nm 1000000nm "17" "17" ""]
-	Pin[0nm 43180000nm 1700000nm 300000nm 1800000nm 1000000nm "18" "18" ""]
-	Pin[2540000nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "19" "19" ""]
-	Pin[2540000nm 2540000nm 1700000nm 300000nm 1800000nm 1000000nm "20" "20" ""]
-	Pin[2540000nm 5080000nm 1700000nm 300000nm 1800000nm 1000000nm "21" "21" ""]
-	Pin[2540000nm 7620000nm 1700000nm 300000nm 1800000nm 1000000nm "22" "22" ""]
-	Pin[2540000nm 10160000nm 1700000nm 300000nm 1800000nm 1000000nm "23" "23" ""]
-	Pin[2540000nm 12700000nm 1700000nm 300000nm 1800000nm 1000000nm "24" "24" ""]
-	Pin[2540000nm 15240000nm 1700000nm 300000nm 1800000nm 1000000nm "25" "25" ""]
-	Pin[2540000nm 17780000nm 1700000nm 300000nm 1800000nm 1000000nm "26" "26" ""]
-	Pin[2540000nm 20320000nm 1700000nm 300000nm 1800000nm 1000000nm "27" "27" ""]
-	Pin[2540000nm 22860000nm 1700000nm 300000nm 1800000nm 1000000nm "28" "28" ""]
-	Pin[2540000nm 25400000nm 1700000nm 300000nm 1800000nm 1000000nm "29" "29" ""]
-	Pin[2540000nm 27940000nm 1700000nm 300000nm 1800000nm 1000000nm "30" "30" ""]
-	Pin[2540000nm 30480000nm 1700000nm 300000nm 1800000nm 1000000nm "31" "31" ""]
-	Pin[2540000nm 33020000nm 1700000nm 300000nm 1800000nm 1000000nm "32" "32" ""]
-	Pin[2540000nm 35560000nm 1700000nm 300000nm 1800000nm 1000000nm "33" "33" ""]
-	Pin[2540000nm 38100000nm 1700000nm 300000nm 1800000nm 1000000nm "34" "34" ""]
-	Pin[2540000nm 40640000nm 1700000nm 300000nm 1800000nm 1000000nm "35" "35" ""]
+	Pin[2540000nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "2" "2" ""]
+	Pin[0nm 2540000nm 1700000nm 300000nm 1800000nm 1000000nm "3" "3" ""]
+	Pin[2540000nm 2540000nm 1700000nm 300000nm 1800000nm 1000000nm "4" "4" ""]
+	Pin[0nm 5080000nm 1700000nm 300000nm 1800000nm 1000000nm "5" "5" ""]
+	Pin[2540000nm 5080000nm 1700000nm 300000nm 1800000nm 1000000nm "6" "6" ""]
+	Pin[0nm 7620000nm 1700000nm 300000nm 1800000nm 1000000nm "7" "7" ""]
+	Pin[2540000nm 7620000nm 1700000nm 300000nm 1800000nm 1000000nm "8" "8" ""]
+	Pin[0nm 10160000nm 1700000nm 300000nm 1800000nm 1000000nm "9" "9" ""]
+	Pin[2540000nm 10160000nm 1700000nm 300000nm 1800000nm 1000000nm "10" "10" ""]
+	Pin[0nm 12700000nm 1700000nm 300000nm 1800000nm 1000000nm "11" "11" ""]
+	Pin[2540000nm 12700000nm 1700000nm 300000nm 1800000nm 1000000nm "12" "12" ""]
+	Pin[0nm 15240000nm 1700000nm 300000nm 1800000nm 1000000nm "13" "13" ""]
+	Pin[2540000nm 15240000nm 1700000nm 300000nm 1800000nm 1000000nm "14" "14" ""]
+	Pin[0nm 17780000nm 1700000nm 300000nm 1800000nm 1000000nm "15" "15" ""]
+	Pin[2540000nm 17780000nm 1700000nm 300000nm 1800000nm 1000000nm "16" "16" ""]
+	Pin[0nm 20320000nm 1700000nm 300000nm 1800000nm 1000000nm "17" "17" ""]
+	Pin[2540000nm 20320000nm 1700000nm 300000nm 1800000nm 1000000nm "18" "18" ""]
+	Pin[0nm 22860000nm 1700000nm 300000nm 1800000nm 1000000nm "19" "19" ""]
+	Pin[2540000nm 22860000nm 1700000nm 300000nm 1800000nm 1000000nm "20" "20" ""]
+	Pin[0nm 25400000nm 1700000nm 300000nm 1800000nm 1000000nm "21" "21" ""]
+	Pin[2540000nm 25400000nm 1700000nm 300000nm 1800000nm 1000000nm "22" "22" ""]
+	Pin[0nm 27940000nm 1700000nm 300000nm 1800000nm 1000000nm "23" "23" ""]
+	Pin[2540000nm 27940000nm 1700000nm 300000nm 1800000nm 1000000nm "24" "24" ""]
+	Pin[0nm 30480000nm 1700000nm 300000nm 1800000nm 1000000nm "25" "25" ""]
+	Pin[2540000nm 30480000nm 1700000nm 300000nm 1800000nm 1000000nm "26" "26" ""]
+	Pin[0nm 33020000nm 1700000nm 300000nm 1800000nm 1000000nm "27" "27" ""]
+	Pin[2540000nm 33020000nm 1700000nm 300000nm 1800000nm 1000000nm "28" "28" ""]
+	Pin[0nm 35560000nm 1700000nm 300000nm 1800000nm 1000000nm "29" "29" ""]
+	Pin[2540000nm 35560000nm 1700000nm 300000nm 1800000nm 1000000nm "30" "30" ""]
+	Pin[0nm 38100000nm 1700000nm 300000nm 1800000nm 1000000nm "31" "31" ""]
+	Pin[2540000nm 38100000nm 1700000nm 300000nm 1800000nm 1000000nm "32" "32" ""]
+	Pin[0nm 40640000nm 1700000nm 300000nm 1800000nm 1000000nm "33" "33" ""]
+	Pin[2540000nm 40640000nm 1700000nm 300000nm 1800000nm 1000000nm "34" "34" ""]
+	Pin[0nm 43180000nm 1700000nm 300000nm 1800000nm 1000000nm "35" "35" ""]
 	Pin[2540000nm 43180000nm 1700000nm 300000nm 1800000nm 1000000nm "36" "36" ""]
 	ElementLine [-1270000nm -1270000nm -1270000nm 44450000nm 250000nm]
 	ElementLine [-1270000nm 44450000nm 3810000nm 44450000nm 250000nm]
@@ -1033,40 +1033,40 @@ Element["" "HEADER36_2" "J9" "JSIDE" 108889999nm 22680000nm 0nm 0nm 0 100 ""]
 Element["" "HEADER36_2" "J10" "JSIDE_5V" 144730000nm 25500000nm 0nm 0nm 0 100 ""]
 (
 	Pin[0nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "1" "1" "square"]
-	Pin[0nm 2540000nm 1700000nm 300000nm 1800000nm 1000000nm "2" "2" ""]
-	Pin[0nm 5080000nm 1700000nm 300000nm 1800000nm 1000000nm "3" "3" ""]
-	Pin[0nm 7620000nm 1700000nm 300000nm 1800000nm 1000000nm "4" "4" ""]
-	Pin[0nm 10160000nm 1700000nm 300000nm 1800000nm 1000000nm "5" "5" ""]
-	Pin[0nm 12700000nm 1700000nm 300000nm 1800000nm 1000000nm "6" "6" ""]
-	Pin[0nm 15240000nm 1700000nm 300000nm 1800000nm 1000000nm "7" "7" ""]
-	Pin[0nm 17780000nm 1700000nm 300000nm 1800000nm 1000000nm "8" "8" ""]
-	Pin[0nm 20320000nm 1700000nm 300000nm 1800000nm 1000000nm "9" "9" ""]
-	Pin[0nm 22860000nm 1700000nm 300000nm 1800000nm 1000000nm "10" "10" ""]
-	Pin[0nm 25400000nm 1700000nm 300000nm 1800000nm 1000000nm "11" "11" ""]
-	Pin[0nm 27940000nm 1700000nm 300000nm 1800000nm 1000000nm "12" "12" ""]
-	Pin[0nm 30480000nm 1700000nm 300000nm 1800000nm 1000000nm "13" "13" ""]
-	Pin[0nm 33020000nm 1700000nm 300000nm 1800000nm 1000000nm "14" "14" ""]
-	Pin[0nm 35560000nm 1700000nm 300000nm 1800000nm 1000000nm "15" "15" ""]
-	Pin[0nm 38100000nm 1700000nm 300000nm 1800000nm 1000000nm "16" "16" ""]
-	Pin[0nm 40640000nm 1700000nm 300000nm 1800000nm 1000000nm "17" "17" ""]
-	Pin[0nm 43180000nm 1700000nm 300000nm 1800000nm 1000000nm "18" "18" ""]
-	Pin[2540000nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "19" "19" ""]
-	Pin[2540000nm 2540000nm 1700000nm 300000nm 1800000nm 1000000nm "20" "20" ""]
-	Pin[2540000nm 5080000nm 1700000nm 300000nm 1800000nm 1000000nm "21" "21" ""]
-	Pin[2540000nm 7620000nm 1700000nm 300000nm 1800000nm 1000000nm "22" "22" ""]
-	Pin[2540000nm 10160000nm 1700000nm 300000nm 1800000nm 1000000nm "23" "23" ""]
-	Pin[2540000nm 12700000nm 1700000nm 300000nm 1800000nm 1000000nm "24" "24" ""]
-	Pin[2540000nm 15240000nm 1700000nm 300000nm 1800000nm 1000000nm "25" "25" ""]
-	Pin[2540000nm 17780000nm 1700000nm 300000nm 1800000nm 1000000nm "26" "26" ""]
-	Pin[2540000nm 20320000nm 1700000nm 300000nm 1800000nm 1000000nm "27" "27" ""]
-	Pin[2540000nm 22860000nm 1700000nm 300000nm 1800000nm 1000000nm "28" "28" ""]
-	Pin[2540000nm 25400000nm 1700000nm 300000nm 1800000nm 1000000nm "29" "29" ""]
-	Pin[2540000nm 27940000nm 1700000nm 300000nm 1800000nm 1000000nm "30" "30" ""]
-	Pin[2540000nm 30480000nm 1700000nm 300000nm 1800000nm 1000000nm "31" "31" ""]
-	Pin[2540000nm 33020000nm 1700000nm 300000nm 1800000nm 1000000nm "32" "32" ""]
-	Pin[2540000nm 35560000nm 1700000nm 300000nm 1800000nm 1000000nm "33" "33" ""]
-	Pin[2540000nm 38100000nm 1700000nm 300000nm 1800000nm 1000000nm "34" "34" ""]
-	Pin[2540000nm 40640000nm 1700000nm 300000nm 1800000nm 1000000nm "35" "35" ""]
+	Pin[2540000nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "2" "2" ""]
+	Pin[0nm 2540000nm 1700000nm 300000nm 1800000nm 1000000nm "3" "3" ""]
+	Pin[2540000nm 2540000nm 1700000nm 300000nm 1800000nm 1000000nm "4" "4" ""]
+	Pin[0nm 5080000nm 1700000nm 300000nm 1800000nm 1000000nm "5" "5" ""]
+	Pin[2540000nm 5080000nm 1700000nm 300000nm 1800000nm 1000000nm "6" "6" ""]
+	Pin[0nm 7620000nm 1700000nm 300000nm 1800000nm 1000000nm "7" "7" ""]
+	Pin[2540000nm 7620000nm 1700000nm 300000nm 1800000nm 1000000nm "8" "8" ""]
+	Pin[0nm 10160000nm 1700000nm 300000nm 1800000nm 1000000nm "9" "9" ""]
+	Pin[2540000nm 10160000nm 1700000nm 300000nm 1800000nm 1000000nm "10" "10" ""]
+	Pin[0nm 12700000nm 1700000nm 300000nm 1800000nm 1000000nm "11" "11" ""]
+	Pin[2540000nm 12700000nm 1700000nm 300000nm 1800000nm 1000000nm "12" "12" ""]
+	Pin[0nm 15240000nm 1700000nm 300000nm 1800000nm 1000000nm "13" "13" ""]
+	Pin[2540000nm 15240000nm 1700000nm 300000nm 1800000nm 1000000nm "14" "14" ""]
+	Pin[0nm 17780000nm 1700000nm 300000nm 1800000nm 1000000nm "15" "15" ""]
+	Pin[2540000nm 17780000nm 1700000nm 300000nm 1800000nm 1000000nm "16" "16" ""]
+	Pin[0nm 20320000nm 1700000nm 300000nm 1800000nm 1000000nm "17" "17" ""]
+	Pin[2540000nm 20320000nm 1700000nm 300000nm 1800000nm 1000000nm "18" "18" ""]
+	Pin[0nm 22860000nm 1700000nm 300000nm 1800000nm 1000000nm "19" "19" ""]
+	Pin[2540000nm 22860000nm 1700000nm 300000nm 1800000nm 1000000nm "20" "20" ""]
+	Pin[0nm 25400000nm 1700000nm 300000nm 1800000nm 1000000nm "21" "21" ""]
+	Pin[2540000nm 25400000nm 1700000nm 300000nm 1800000nm 1000000nm "22" "22" ""]
+	Pin[0nm 27940000nm 1700000nm 300000nm 1800000nm 1000000nm "23" "23" ""]
+	Pin[2540000nm 27940000nm 1700000nm 300000nm 1800000nm 1000000nm "24" "24" ""]
+	Pin[0nm 30480000nm 1700000nm 300000nm 1800000nm 1000000nm "25" "25" ""]
+	Pin[2540000nm 30480000nm 1700000nm 300000nm 1800000nm 1000000nm "26" "26" ""]
+	Pin[0nm 33020000nm 1700000nm 300000nm 1800000nm 1000000nm "27" "27" ""]
+	Pin[2540000nm 33020000nm 1700000nm 300000nm 1800000nm 1000000nm "28" "28" ""]
+	Pin[0nm 35560000nm 1700000nm 300000nm 1800000nm 1000000nm "29" "29" ""]
+	Pin[2540000nm 35560000nm 1700000nm 300000nm 1800000nm 1000000nm "30" "30" ""]
+	Pin[0nm 38100000nm 1700000nm 300000nm 1800000nm 1000000nm "31" "31" ""]
+	Pin[2540000nm 38100000nm 1700000nm 300000nm 1800000nm 1000000nm "32" "32" ""]
+	Pin[0nm 40640000nm 1700000nm 300000nm 1800000nm 1000000nm "33" "33" ""]
+	Pin[2540000nm 40640000nm 1700000nm 300000nm 1800000nm 1000000nm "34" "34" ""]
+	Pin[0nm 43180000nm 1700000nm 300000nm 1800000nm 1000000nm "35" "35" ""]
 	Pin[2540000nm 43180000nm 1700000nm 300000nm 1800000nm 1000000nm "36" "36" ""]
 	ElementLine [-1270000nm -1270000nm -1270000nm 44450000nm 250000nm]
 	ElementLine [-1270000nm 44450000nm 3810000nm 44450000nm 250000nm]
@@ -1330,7 +1330,7 @@ Element["" "0603" "C10" "0.1uF" 86800000nm 9200000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "TSSOP24" "U6" "SN74LVC8T245PW" 126600000nm 31700000nm 0nm 0nm 0 100 ""]
+Element["" "TSSOP24" "U6" "SN74LVC8T245PW" 118000000nm 25500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-3800000nm -3575000nm -2600000nm -3575000nm 400000nm 200000nm 500000nm "1DIR" "1" "square"]
 	Pad[-3800000nm -2925000nm -2600000nm -2925000nm 400000nm 200000nm 500000nm "A1" "2" ""]
@@ -1363,7 +1363,7 @@ Element["" "TSSOP24" "U6" "SN74LVC8T245PW" 126600000nm 31700000nm 0nm 0nm 0 100 
 
 	)
 
-Element["" "0603" "C11" "0.1uF" 129600000nm 25700000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C11" "0.1uF" 121000000nm 19500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1372,7 +1372,7 @@ Element["" "0603" "C11" "0.1uF" 129600000nm 25700000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C12" "0.1uF" 123600000nm 25700000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C12" "0.1uF" 115000000nm 19500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1381,7 +1381,7 @@ Element["" "0603" "C12" "0.1uF" 123600000nm 25700000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "TSSOP24" "U7" "SN74LVC8T245PW" 127199999nm 68600000nm 0nm 0nm 0 100 ""]
+Element["" "TSSOP24" "U7" "SN74LVC8T245PW" 134000000nm 43500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-3800000nm -3575000nm -2600000nm -3575000nm 400000nm 200000nm 500000nm "1DIR" "1" "square"]
 	Pad[-3800000nm -2925000nm -2600000nm -2925000nm 400000nm 200000nm 500000nm "A1" "2" ""]
@@ -1414,7 +1414,7 @@ Element["" "TSSOP24" "U7" "SN74LVC8T245PW" 127199999nm 68600000nm 0nm 0nm 0 100 
 
 	)
 
-Element["" "0603" "C13" "0.1uF" 130199999nm 62600000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C13" "0.1uF" 137000000nm 37500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1423,7 +1423,7 @@ Element["" "0603" "C13" "0.1uF" 130199999nm 62600000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C14" "0.1uF" 124199999nm 62600000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C14" "0.1uF" 131000000nm 37500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1432,7 +1432,7 @@ Element["" "0603" "C14" "0.1uF" 124199999nm 62600000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "TSSOP24" "U8" "SN74LVC8T245PW" 126500000nm 43500000nm 0nm 0nm 0 100 ""]
+Element["" "TSSOP24" "U8" "SN74LVC8T245PW" 134000000nm 25500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-3800000nm -3575000nm -2600000nm -3575000nm 400000nm 200000nm 500000nm "1DIR" "1" "square"]
 	Pad[-3800000nm -2925000nm -2600000nm -2925000nm 400000nm 200000nm 500000nm "A1" "2" ""]
@@ -1465,7 +1465,7 @@ Element["" "TSSOP24" "U8" "SN74LVC8T245PW" 126500000nm 43500000nm 0nm 0nm 0 100 
 
 	)
 
-Element["" "0603" "C15" "0.1uF" 129500000nm 37500000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C15" "0.1uF" 137000000nm 19500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1474,7 +1474,7 @@ Element["" "0603" "C15" "0.1uF" 129500000nm 37500000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C16" "0.1uF" 123500000nm 37500000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C16" "0.1uF" 131000000nm 19500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1483,7 +1483,7 @@ Element["" "0603" "C16" "0.1uF" 123500000nm 37500000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "TSSOP24" "U9" "SN74LVC8T245PW" 126699999nm 55200000nm 0nm 0nm 0 100 ""]
+Element["" "TSSOP24" "U9" "SN74LVC8T245PW" 118000000nm 43500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-3800000nm -3575000nm -2600000nm -3575000nm 400000nm 200000nm 500000nm "1DIR" "1" "square"]
 	Pad[-3800000nm -2925000nm -2600000nm -2925000nm 400000nm 200000nm 500000nm "A1" "2" ""]
@@ -1516,7 +1516,7 @@ Element["" "TSSOP24" "U9" "SN74LVC8T245PW" 126699999nm 55200000nm 0nm 0nm 0 100 
 
 	)
 
-Element["" "0603" "C17" "0.1uF" 129699999nm 49200000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C17" "0.1uF" 121000000nm 37500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1525,7 +1525,7 @@ Element["" "0603" "C17" "0.1uF" 129699999nm 49200000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C18" "0.1uF" 123699999nm 49200000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C18" "0.1uF" 115000000nm 37500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1534,7 +1534,40 @@ Element["" "0603" "C18" "0.1uF" 123699999nm 49200000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C19" "0.1uF" 15000000nm 80000000nm 0nm 0nm 0 100 ""]
+Element["" "TSSOP24" "U10" "SN74LVC8T245PW" 118000000nm 61500000nm 0nm 0nm 0 100 ""]
+(
+	Pad[-3800000nm -3575000nm -2600000nm -3575000nm 400000nm 200000nm 500000nm "1DIR" "1" "square"]
+	Pad[-3800000nm -2925000nm -2600000nm -2925000nm 400000nm 200000nm 500000nm "A1" "2" ""]
+	Pad[-3800000nm -2275000nm -2600000nm -2275000nm 400000nm 200000nm 500000nm "A2" "3" ""]
+	Pad[-3800000nm -1625000nm -2600000nm -1625000nm 400000nm 200000nm 500000nm "A3" "4" ""]
+	Pad[-3800000nm -975000nm -2600000nm -975000nm 400000nm 200000nm 500000nm "A4" "5" ""]
+	Pad[-3800000nm -325000nm -2600000nm -325000nm 400000nm 200000nm 500000nm "GND" "6" ""]
+	Pad[-3800000nm 325000nm -2600000nm 325000nm 400000nm 200000nm 500000nm "A5" "7" ""]
+	Pad[-3800000nm 975000nm -2600000nm 975000nm 400000nm 200000nm 500000nm "A6" "8" ""]
+	Pad[-3800000nm 1625000nm -2600000nm 1625000nm 400000nm 200000nm 500000nm "A7" "9" ""]
+	Pad[-3800000nm 2275000nm -2600000nm 2275000nm 400000nm 200000nm 500000nm "A8" "10" ""]
+	Pad[-3800000nm 2925000nm -2600000nm 2925000nm 400000nm 200000nm 500000nm "1OE" "11" ""]
+	Pad[-3800000nm 3575000nm -2600000nm 3575000nm 400000nm 200000nm 500000nm "GND" "12" ""]
+	Pad[2600000nm 3575000nm 3800000nm 3575000nm 400000nm 200000nm 500000nm "B8" "13" ""]
+	Pad[2600000nm 2925000nm 3800000nm 2925000nm 400000nm 200000nm 500000nm "B7" "14" ""]
+	Pad[2600000nm 2275000nm 3800000nm 2275000nm 400000nm 200000nm 500000nm "B6" "15" ""]
+	Pad[2600000nm 1625000nm 3800000nm 1625000nm 400000nm 200000nm 500000nm "B5" "16" ""]
+	Pad[2600000nm 975000nm 3800000nm 975000nm 400000nm 200000nm 500000nm "VCCB" "17" ""]
+	Pad[2600000nm 325000nm 3800000nm 325000nm 400000nm 200000nm 500000nm "B4" "18" ""]
+	Pad[2600000nm -325000nm 3800000nm -325000nm 400000nm 200000nm 500000nm "B3" "19" ""]
+	Pad[2600000nm -975000nm 3800000nm -975000nm 400000nm 200000nm 500000nm "B2" "20" ""]
+	Pad[2600000nm -1625000nm 3800000nm -1625000nm 400000nm 200000nm 500000nm "B1" "21" ""]
+	Pad[2600000nm -2275000nm 3800000nm -2275000nm 400000nm 200000nm 500000nm "VCCA" "22" ""]
+	Pad[2600000nm -2925000nm 3800000nm -2925000nm 400000nm 200000nm 500000nm "VCCA" "23" ""]
+	Pad[2600000nm -3575000nm 3800000nm -3575000nm 400000nm 200000nm 500000nm "VCCB" "24" ""]
+	ElementLine [-2200000nm -3900000nm -2200000nm 3900000nm 150000nm]
+	ElementLine [-2200000nm 3900000nm 2200000nm 3900000nm 150000nm]
+	ElementLine [2200000nm 3900000nm 2200000nm -3900000nm 150000nm]
+	ElementLine [-2200000nm -3900000nm 2200000nm -3900000nm 150000nm]
+
+	)
+
+Element["" "0603" "C19" "0.1uF" 121000000nm 55500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1543,7 +1576,7 @@ Element["" "0603" "C19" "0.1uF" 15000000nm 80000000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C20" "0.1uF" 29000000nm 80000000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C20" "0.1uF" 115000000nm 55500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1552,7 +1585,7 @@ Element["" "0603" "C20" "0.1uF" 29000000nm 80000000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C21" "0.1uF" 43000000nm 80000000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C21" "0.1uF" 15000000nm 80000000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1561,7 +1594,7 @@ Element["" "0603" "C21" "0.1uF" 43000000nm 80000000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C22" "0.1uF" 57000000nm 80000000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C22" "0.1uF" 29000000nm 80000000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1570,7 +1603,7 @@ Element["" "0603" "C22" "0.1uF" 57000000nm 80000000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C23" "0.1uF" 71000000nm 80000000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C23" "0.1uF" 43000000nm 80000000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1579,7 +1612,7 @@ Element["" "0603" "C23" "0.1uF" 71000000nm 80000000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C24" "0.1uF" 85000000nm 80000000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C24" "0.1uF" 57000000nm 80000000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1588,7 +1621,7 @@ Element["" "0603" "C24" "0.1uF" 85000000nm 80000000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C25" "0.1uF" 99000000nm 80000000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C25" "0.1uF" 71000000nm 80000000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1597,7 +1630,7 @@ Element["" "0603" "C25" "0.1uF" 99000000nm 80000000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C26" "0.1uF" 113000000nm 80000000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C26" "0.1uF" 85000000nm 80000000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1606,7 +1639,7 @@ Element["" "0603" "C26" "0.1uF" 113000000nm 80000000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "C27" "0.1uF" 127000000nm 80000000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C27" "0.1uF" 99000000nm 80000000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1615,7 +1648,25 @@ Element["" "0603" "C27" "0.1uF" 127000000nm 80000000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "HEADER10_1" "J11" "DIR_CTRL" 40000000nm 75000000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "C28" "0.1uF" 113000000nm 80000000nm 0nm 0nm 0 100 ""]
+(
+	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
+	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
+	ElementLine [-800000nm -400000nm -800000nm 400000nm 120000nm]
+	ElementLine [800000nm -400000nm 800000nm 400000nm 120000nm]
+
+	)
+
+Element["" "0603" "C29" "0.1uF" 141000000nm 80000000nm 0nm 0nm 0 100 ""]
+(
+	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
+	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
+	ElementLine [-800000nm -400000nm -800000nm 400000nm 120000nm]
+	ElementLine [800000nm -400000nm 800000nm 400000nm 120000nm]
+
+	)
+
+Element["" "HEADER11_1" "J11" "DIR_CTRL" 40000000nm 75000000nm 0nm 0nm 0 100 ""]
 (
 	Pin[0nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "1" "1" "square"]
 	Pin[2540000nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "2" "2" ""]
@@ -1627,10 +1678,11 @@ Element["" "HEADER10_1" "J11" "DIR_CTRL" 40000000nm 75000000nm 0nm 0nm 0 100 ""]
 	Pin[17780000nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "8" "8" ""]
 	Pin[20320000nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "9" "9" ""]
 	Pin[22860000nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "10" "10" ""]
+	Pin[25400000nm 0nm 1700000nm 300000nm 1800000nm 1000000nm "11" "11" ""]
 	ElementLine [-1270000nm -1270000nm -1270000nm 1270000nm 250000nm]
-	ElementLine [-1270000nm 1270000nm 24130000nm 1270000nm 250000nm]
-	ElementLine [24130000nm 1270000nm 24130000nm -1270000nm 250000nm]
-	ElementLine [24130000nm -1270000nm -1270000nm -1270000nm 250000nm]
+	ElementLine [-1270000nm 1270000nm 26670000nm 1270000nm 250000nm]
+	ElementLine [26670000nm 1270000nm 26670000nm -1270000nm 250000nm]
+	ElementLine [26670000nm -1270000nm -1270000nm -1270000nm 250000nm]
 
 	)
 
@@ -1679,7 +1731,7 @@ Element["" "0603" "R5" "10K" 94800000nm 20200000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "R6" "10K" 131600000nm 21700000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "R6" "10K" 123000000nm 15500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1688,7 +1740,7 @@ Element["" "0603" "R6" "10K" 131600000nm 21700000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "R7" "10K" 132199999nm 73600000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "R7" "10K" 139000000nm 48500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1697,7 +1749,7 @@ Element["" "0603" "R7" "10K" 132199999nm 73600000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "R8" "10K" 134500000nm 48500000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "R8" "10K" 142000000nm 30500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1706,7 +1758,16 @@ Element["" "0603" "R8" "10K" 134500000nm 48500000nm 0nm 0nm 0 100 ""]
 
 	)
 
-Element["" "0603" "R9" "10K" 131699999nm 60200000nm 0nm 0nm 0 100 ""]
+Element["" "0603" "R9" "10K" 123000000nm 48500000nm 0nm 0nm 0 100 ""]
+(
+	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
+	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
+	ElementLine [-800000nm -400000nm -800000nm 400000nm 120000nm]
+	ElementLine [800000nm -400000nm 800000nm 400000nm 120000nm]
+
+	)
+
+Element["" "0603" "R10" "10K" 123000000nm 53500000nm 0nm 0nm 0 100 ""]
 (
 	Pad[-750000nm 0nm -750000nm 0nm 900000nm 500000nm 600000nm "1" "1" "square"]
 	Pad[750000nm 0nm 750000nm 0nm 900000nm 500000nm 600000nm "2" "2" "square"]
@@ -1719,11 +1780,27 @@ Layer(1 "top")
 (
 )
 
-Layer(2 "bottom")
+Layer(2 "GND1")
 (
 )
 
-Layer(3 "outline")
+Layer(3 "signal1")
+(
+)
+
+Layer(4 "signal2")
+(
+)
+
+Layer(5 "GND2")
+(
+)
+
+Layer(6 "bottom")
+(
+)
+
+Layer(7 "outline")
 (
 	Line[254000nm 254000nm 154746000nm 254000nm 254000nm 508000nm "clearline"]
 	Line[154746000nm 254000nm 154746000nm 89746000nm 254000nm 508000nm "clearline"]
@@ -1731,11 +1808,11 @@ Layer(3 "outline")
 	Line[254000nm 89746000nm 254000nm 254000nm 254000nm 508000nm "clearline"]
 )
 
-Layer(4 "silk")
+Layer(8 "silk")
 (
 )
 
-Layer(5 "silk")
+Layer(9 "silk")
 (
 	Text[40000000nm 79000000nm 1 120 "U1" "clearline"]
 	Text[42540000nm 79000000nm 1 120 "U2" "clearline"]
@@ -1746,10 +1823,11 @@ Layer(5 "silk")
 	Text[55240000nm 79000000nm 1 120 "U7" "clearline"]
 	Text[57780000nm 79000000nm 1 120 "U8" "clearline"]
 	Text[60320000nm 79000000nm 1 120 "U9" "clearline"]
-	Text[62860000nm 79000000nm 1 120 "GND" "clearline"]
+	Text[62860000nm 79000000nm 1 120 "U10" "clearline"]
+	Text[65400000nm 79000000nm 1 120 "GND" "clearline"]
 	Text[30000000nm 74000000nm 0 150 "J11 DIR" "clearline"]
 	Text[55000000nm 86000000nm 0 150 "tinycomputers.io" "clearline"]
-	Text[87000000nm 86000000nm 0 150 "v0.2" "clearline"]
+	Text[87000000nm 86000000nm 0 150 "v0.4" "clearline"]
 )
 
 NetList()
@@ -1787,11 +1865,14 @@ NetList()
 		Connect("U9-22")
 		Connect("U9-23")
 		Connect("C17-1")
+		Connect("U10-22")
+		Connect("U10-23")
 		Connect("C19-1")
 		Connect("C21-1")
 		Connect("C23-1")
 		Connect("C25-1")
 		Connect("C27-1")
+		Connect("C29-1")
 	)
 	Net("+5V" "(unknown)")
 	(
@@ -1828,10 +1909,13 @@ NetList()
 		Connect("U9-17")
 		Connect("U9-24")
 		Connect("C18-1")
+		Connect("U10-17")
+		Connect("U10-24")
 		Connect("C20-1")
 		Connect("C22-1")
 		Connect("C24-1")
 		Connect("C26-1")
+		Connect("C28-1")
 	)
 	Net("A0" "(unknown)")
 	(
@@ -2071,17 +2155,17 @@ NetList()
 	Net("D37" "(unknown)")
 	(
 		Connect("J9-18")
-		Connect("U7-2")
+		Connect("U9-2")
 	)
 	Net("D38" "(unknown)")
 	(
 		Connect("J9-19")
-		Connect("U9-2")
+		Connect("U10-2")
 	)
 	Net("D39" "(unknown)")
 	(
 		Connect("J9-20")
-		Connect("U7-3")
+		Connect("U9-3")
 	)
 	Net("D4" "(unknown)")
 	(
@@ -2091,37 +2175,37 @@ NetList()
 	Net("D40" "(unknown)")
 	(
 		Connect("J9-21")
-		Connect("U9-3")
+		Connect("U9-4")
 	)
 	Net("D41" "(unknown)")
 	(
 		Connect("J9-22")
-		Connect("U7-4")
+		Connect("U9-5")
 	)
 	Net("D42" "(unknown)")
 	(
 		Connect("J9-23")
-		Connect("U9-4")
+		Connect("U7-2")
 	)
 	Net("D43" "(unknown)")
 	(
 		Connect("J9-24")
-		Connect("U7-5")
+		Connect("U7-3")
 	)
 	Net("D44" "(unknown)")
 	(
 		Connect("J9-25")
-		Connect("U9-5")
+		Connect("U7-4")
 	)
 	Net("D45" "(unknown)")
 	(
 		Connect("J9-26")
-		Connect("U7-7")
+		Connect("U7-5")
 	)
 	Net("D46" "(unknown)")
 	(
 		Connect("J9-27")
-		Connect("U9-7")
+		Connect("U7-7")
 	)
 	Net("D47" "(unknown)")
 	(
@@ -2131,12 +2215,12 @@ NetList()
 	Net("D48" "(unknown)")
 	(
 		Connect("J9-29")
-		Connect("U9-8")
+		Connect("U7-9")
 	)
 	Net("D49" "(unknown)")
 	(
 		Connect("J9-30")
-		Connect("U7-9")
+		Connect("U7-10")
 	)
 	Net("D5" "(unknown)")
 	(
@@ -2146,17 +2230,22 @@ NetList()
 	Net("D50" "(unknown)")
 	(
 		Connect("J9-31")
-		Connect("U9-9")
+		Connect("U10-3")
 	)
 	Net("D51" "(unknown)")
 	(
 		Connect("J9-32")
-		Connect("U7-10")
+		Connect("U10-4")
 	)
 	Net("D52" "(unknown)")
 	(
 		Connect("J9-33")
-		Connect("U9-10")
+		Connect("U10-5")
+	)
+	Net("D53" "(unknown)")
+	(
+		Connect("J9-34")
+		Connect("U9-7")
 	)
 	Net("D6" "(unknown)")
 	(
@@ -2193,6 +2282,12 @@ NetList()
 		Connect("U1-1")
 		Connect("J11-1")
 		Connect("R1-1")
+	)
+	Net("DIR_U10" "(unknown)")
+	(
+		Connect("U10-1")
+		Connect("J11-10")
+		Connect("R10-1")
 	)
 	Net("DIR_U2" "(unknown)")
 	(
@@ -2244,15 +2339,6 @@ NetList()
 	)
 	Net("GND" "(unknown)")
 	(
-		Connect("J5-6")
-		Connect("J5-7")
-		Connect("J8-4")
-		Connect("J7-6")
-		Connect("J7-8")
-		Connect("J9-35")
-		Connect("J9-36")
-		Connect("J10-35")
-		Connect("J10-36")
 		Connect("U1-6")
 		Connect("U1-11")
 		Connect("U1-12")
@@ -2298,6 +2384,9 @@ NetList()
 		Connect("U9-12")
 		Connect("C17-2")
 		Connect("C18-2")
+		Connect("U10-6")
+		Connect("U10-11")
+		Connect("U10-12")
 		Connect("C19-2")
 		Connect("C20-2")
 		Connect("C21-2")
@@ -2307,7 +2396,8 @@ NetList()
 		Connect("C25-2")
 		Connect("C26-2")
 		Connect("C27-2")
-		Connect("J11-10")
+		Connect("C28-2")
+		Connect("C29-2")
 		Connect("R1-2")
 		Connect("R2-2")
 		Connect("R3-2")
@@ -2317,6 +2407,7 @@ NetList()
 		Connect("R7-2")
 		Connect("R8-2")
 		Connect("R9-2")
+		Connect("R10-2")
 	)
 	Net("IOREF_3V3" "(unknown)")
 	(
@@ -2486,22 +2577,22 @@ NetList()
 	Net("PE4" "(unknown)")
 	(
 		Connect("J10-30")
-		Connect("U7-14")
+		Connect("U7-13")
 	)
 	Net("PE5" "(unknown)")
 	(
 		Connect("J10-32")
-		Connect("U7-13")
+		Connect("U10-19")
 	)
 	Net("PE6" "(unknown)")
 	(
 		Connect("J10-21")
-		Connect("U9-20")
+		Connect("U9-19")
 	)
 	Net("PG10" "(unknown)")
 	(
 		Connect("J10-25")
-		Connect("U9-18")
+		Connect("U7-19")
 	)
 	Net("PG12" "(unknown)")
 	(
@@ -2518,6 +2609,11 @@ NetList()
 		Connect("J8-19")
 		Connect("U5-20")
 	)
+	Net("PG7" "(unknown)")
+	(
+		Connect("J10-34")
+		Connect("U9-16")
+	)
 	Net("PH12" "(unknown)")
 	(
 		Connect("J8-2")
@@ -2531,7 +2627,7 @@ NetList()
 	Net("PH15" "(unknown)")
 	(
 		Connect("J10-27")
-		Connect("U9-16")
+		Connect("U7-16")
 	)
 	Net("PH4" "(unknown)")
 	(
@@ -2546,27 +2642,27 @@ NetList()
 	Net("PI10" "(unknown)")
 	(
 		Connect("J10-24")
-		Connect("U7-18")
+		Connect("U7-20")
 	)
 	Net("PI11" "(unknown)")
 	(
 		Connect("J10-31")
-		Connect("U9-14")
+		Connect("U10-20")
 	)
 	Net("PI13" "(unknown)")
 	(
 		Connect("J10-26")
-		Connect("U7-16")
+		Connect("U7-18")
 	)
 	Net("PI14" "(unknown)")
 	(
 		Connect("J10-20")
-		Connect("U7-20")
+		Connect("U9-20")
 	)
 	Net("PI15" "(unknown)")
 	(
 		Connect("J10-23")
-		Connect("U9-19")
+		Connect("U7-21")
 	)
 	Net("PI9" "(unknown)")
 	(
@@ -2631,12 +2727,12 @@ NetList()
 	Net("PJ6" "(unknown)")
 	(
 		Connect("J10-18")
-		Connect("U7-21")
+		Connect("U9-21")
 	)
 	Net("PJ7" "(unknown)")
 	(
 		Connect("J10-19")
-		Connect("U9-21")
+		Connect("U10-21")
 	)
 	Net("PJ8" "(unknown)")
 	(
@@ -2646,7 +2742,7 @@ NetList()
 	Net("PK0" "(unknown)")
 	(
 		Connect("J10-29")
-		Connect("U9-15")
+		Connect("U7-14")
 	)
 	Net("PK1" "(unknown)")
 	(
@@ -2656,7 +2752,7 @@ NetList()
 	Net("PK2" "(unknown)")
 	(
 		Connect("J10-33")
-		Connect("U9-13")
+		Connect("U10-18")
 	)
 	Net("PK3" "(unknown)")
 	(
@@ -2681,7 +2777,7 @@ NetList()
 	Net("PK7" "(unknown)")
 	(
 		Connect("J10-22")
-		Connect("U7-19")
+		Connect("U9-18")
 	)
 	Net("SCL1" "(unknown)")
 	(
@@ -2692,10 +2788,5 @@ NetList()
 	(
 		Connect("J4-2")
 		Connect("U1-3")
-	)
-	Net("VIN" "(unknown)")
-	(
-		Connect("J5-8")
-		Connect("J2-1")
 	)
 )
