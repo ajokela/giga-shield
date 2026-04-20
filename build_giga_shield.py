@@ -450,11 +450,12 @@ def build_pcb():
     dir_names = ['DIR_U1','DIR_U2','DIR_U3','DIR_U4','DIR_U5',
                  'DIR_U6','DIR_U7','DIR_U8','DIR_U9','DIR_U10','GND']
     for i, n in enumerate(dir_names):
-        if n not in POWER_NETS:
-            add_net(n, 'J11', i+1)
+        add_net(n, 'J11', i+1)  # include GND for J11 pin 11
 
-    # DIR pull-down resistors (default A→B)
-    # Custom offsets to avoid overlapping nearby headers and caps
+    # DIR resistors: default B→A for U1-U9 (Z80 drives Giga), A→B for U10 (Giga drives Z80)
+    # SN74LVC8T245 datasheet: DIR=L → B→A, DIR=H → A→B
+    # R1-R9: 10K pulldown to GND (default B→A for reads from Z80)
+    # R10: 10K pull-UP to +3V3 (U10 carries CLK/RESET/INT/NMI, always Giga→Z80)
     resistor_offsets = {
         3: (mm(8), mm(-5)),    # R3: further right to clear C5
         6: (mm(5), mm(-10)),   # R6: well above U6 to clear body and U8's C15
@@ -468,7 +469,8 @@ def build_pcb():
         dx, dy = resistor_offsets.get(i+1, (mm(5), mm(5)))
         elements.append(smd_0603_element(rref, '10K', sx + dx, sy + dy))
         add_net(SHIFTER_NETS[uref]['dir_net'], rref, 1)
-        add_net('GND', rref, 2)
+        # R10 is pull-up to +3V3 (U10 must default A→B); others pull down to GND
+        add_net('+3V3' if i + 1 == 10 else 'GND', rref, 2)
 
     # ============================================================
     # Assemble PCB file
@@ -592,4 +594,4 @@ if __name__ == '__main__':
     print(f"Generated {outfile}")
     print(f"Board: {BOARD_W/1e6:.0f}mm x {BOARD_H/1e6:.0f}mm")
     print(f"10x SN74LVC8T245PW (TSSOP-24) level shifters")
-    print(f"DIR control via J11 (1x10 header)")
+    print(f"DIR control via J11 (1x11 header: 10 DIR + GND)")

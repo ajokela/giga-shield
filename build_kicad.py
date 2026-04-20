@@ -252,7 +252,9 @@ def collect_nets():
         rref = f'R{i+1}'
         uref = f'U{i+1}'
         add_net(SHIFTER_NETS[uref]['dir_net'], rref, 1)
-        add_net('GND', rref, 2)
+        # R10 is pull-UP to +3V3 (U10 must default A→B for CLK/RESET/INT/NMI);
+        # R1-R9 are pulldowns (default B→A, Z80→Giga)
+        add_net('+3V3' if i + 1 == 10 else 'GND', rref, 2)
 
     # Filter out single-connection nets
     return {k: v for k, v in nets.items() if len(v) >= 2}
