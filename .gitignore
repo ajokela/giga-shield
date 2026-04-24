@@ -34,3 +34,6 @@ log4j2.xml
 # Unzipped fab directories are redundant with the tracked zips
 fabrication/
 fabrication_v04/
+
+# PCBWay order correspondence that should stay local
+PCBWay engineering question of order W364146AS2D37.pdf
