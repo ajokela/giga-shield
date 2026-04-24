@@ -252,20 +252,42 @@ def emit_lib_symbol_passive(out, sym_name, ref_prefix):
     out.append(f'    )')
 
 
+def emit_wire(out, x1, y1, x2, y2):
+    """Draw a wire between two points."""
+    out.append(f'  (wire (pts (xy {x1} {y1}) (xy {x2} {y2}))')
+    out.append(f'    (stroke (width 0) (type default))')
+    out.append(f'    (uuid {uid()}))')
+
+
 def emit_label(out, net_name, x, y, angle=0):
     """Emit a net label at the given position."""
     if net_name.startswith('NC'):
         return
+    # Label angle 0 = text to right, 180 = text to left
+    justify = "left" if angle == 0 else "right"
     out.append(f'  (label "{net_name}" (at {x} {y} {angle}) (fields_autoplaced)')
-    out.append(f'    (effects (font (size 1.27 1.27)) (justify left))')
+    out.append(f'    (effects (font (size 1.27 1.27)) (justify {justify}))')
     out.append(f'    (uuid {uid()}))')
 
 
-def emit_power_label(out, net_name, x, y):
+def emit_power_label(out, net_name, x, y, angle=0):
     """Emit a power flag/label."""
-    out.append(f'  (global_label "{net_name}" (shape passive) (at {x} {y} 0) (fields_autoplaced)')
+    out.append(f'  (global_label "{net_name}" (shape passive) (at {x} {y} {angle}) (fields_autoplaced)')
     out.append(f'    (effects (font (size 1.27 1.27)) (justify left))')
     out.append(f'    (uuid {uid()}))')
+
+
+def emit_pin_label(out, net_name, pin_x, pin_y, direction='right', stub_len=2.54):
+    """Place a label directly AT the pin endpoint (no wire stub).
+    KiCad recognizes a label at a pin's connection point as connected.
+    direction: 'left' or 'right' - affects text orientation only."""
+    if net_name.startswith('NC'):
+        return
+    label_angle = 0 if direction == 'right' else 180
+    if net_name in POWER_NETS:
+        emit_power_label(out, net_name, pin_x, pin_y, label_angle)
+    else:
+        emit_label(out, net_name, pin_x, pin_y, label_angle)
 
 
 def build_schematic():
@@ -369,21 +391,13 @@ def build_schematic():
             (23, '+3V3', 12.7, -11.43),
             (24, '+5V', 12.7, -13.97),
         ]
+        # KiCad schematic Y grows downward; library symbol Y grows upward.
+        # Negate py when computing absolute pin position.
         for pin_num, net, px, py in left_pins:
-            lx = sx + px - 2
-            ly = sy + py
-            if net in POWER_NETS:
-                emit_power_label(out, net, lx, ly)
-            else:
-                emit_label(out, net, lx, ly, 180)
+            emit_pin_label(out, net, sx + px, sy - py, direction='left')
 
         for pin_num, net, px, py in right_pins:
-            lx = sx + px + 2
-            ly = sy + py
-            if net in POWER_NETS:
-                emit_power_label(out, net, lx, ly)
-            else:
-                emit_label(out, net, lx, ly)
+            emit_pin_label(out, net, sx + px, sy - py, direction='right')
 
     # Place capacitors
     cx_base, cy_base = 50, 210
@@ -404,8 +418,8 @@ def build_schematic():
         out.append(f'    (pin "1" (uuid {uid()}))')
         out.append(f'    (pin "2" (uuid {uid()}))')
         out.append(f'  )')
-        emit_power_label(out, '+3V3', cx - 5.81, cy)
-        emit_power_label(out, 'GND', cx + 5.81, cy)
+        emit_pin_label(out, '+3V3', cx - 3.81, cy, direction='left')
+        emit_pin_label(out, 'GND', cx + 3.81, cy, direction='right')
         cap_num += 1
 
         # VCCB cap
@@ -422,8 +436,8 @@ def build_schematic():
         out.append(f'    (pin "1" (uuid {uid()}))')
         out.append(f'    (pin "2" (uuid {uid()}))')
         out.append(f'  )')
-        emit_power_label(out, '+5V', cx - 5.81, cy2)
-        emit_power_label(out, 'GND', cx + 5.81, cy2)
+        emit_pin_label(out, '+5V', cx - 3.81, cy2, direction='left')
+        emit_pin_label(out, 'GND', cx + 3.81, cy2, direction='right')
         cap_num += 1
 
     # Extra power caps (C21-C29)
@@ -443,8 +457,8 @@ def build_schematic():
         out.append(f'    (pin "1" (uuid {uid()}))')
         out.append(f'    (pin "2" (uuid {uid()}))')
         out.append(f'  )')
-        emit_power_label(out, pwr, cx - 5.81, cy)
-        emit_power_label(out, 'GND', cx + 5.81, cy)
+        emit_pin_label(out, pwr, cx - 3.81, cy, direction='left')
+        emit_pin_label(out, 'GND', cx + 3.81, cy, direction='right')
         cap_num += 1
 
     # Place resistors (R1-R10)
@@ -465,8 +479,10 @@ def build_schematic():
         out.append(f'    (pin "1" (uuid {uid()}))')
         out.append(f'    (pin "2" (uuid {uid()}))')
         out.append(f'  )')
-        emit_label(out, SHIFTER_NETS[uref]['dir_net'], rx - 5.81, ry, 180)
-        emit_power_label(out, 'GND', rx + 5.81, ry)
+        emit_pin_label(out, SHIFTER_NETS[uref]['dir_net'], rx - 3.81, ry, direction='left')
+        # R10 pulls UP to +3V3 (U10 defaults A→B); R1-R9 pull DOWN to GND
+        r2_net = '+3V3' if i + 1 == 10 else 'GND'
+        emit_pin_label(out, r2_net, rx + 3.81, ry, direction='right')
 
     # Place connectors
     jx_base, jy_base = 330, 30
@@ -496,25 +512,24 @@ def build_schematic():
             out.append(f'    (pin "{p}" (uuid {uid()}))')
         out.append(f'  )')
 
-        # Net labels on connector pins
+        # Net labels on connector pins (with wire stubs)
         rows = npins // ncols
         pin_num = 1
         for row in range(rows):
             for col in range(ncols):
                 net = pins[pin_num - 1]
+                # Pin endpoint positions (matching lib_symbol_conn geometry)
                 if col == 0:
-                    lx = jx - 7.08
-                    angle = 180
+                    pin_x = jx - 5.08
+                    direction = 'left'
                 else:
-                    lx = jx + (ncols - 1) * 5.08 + 7.08
-                    angle = 0
-                ly = jy + (rows // 2 - row) * 2.54
+                    pin_x = jx + (ncols - 1) * 5.08 + 5.08
+                    direction = 'right'
+                pin_y = jy + (rows // 2 - row) * 2.54
                 if net == 'NC' or net == 'VIN':
                     pass
-                elif net in POWER_NETS:
-                    emit_power_label(out, net, lx, ly)
                 else:
-                    emit_label(out, net, lx, ly, angle)
+                    emit_pin_label(out, net, pin_x, pin_y, direction=direction)
                 pin_num += 1
 
     # Mounting holes
